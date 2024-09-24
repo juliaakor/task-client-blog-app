@@ -18,12 +18,20 @@
     "prettier": "prettier --check --ignore-path .gitignore .",
     "prettier:fix": "prettier --write --ignore-path .gitignore ."
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "npx --no -- commitlint --edit $1",
+      "pre-commit": "yarn lint && yarn prettier"
+    }
+  },
   "dependencies": {
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -37,6 +45,7 @@
     "eslint-plugin-perfectionist": "^3.6.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react-refresh": "^0.4.12",
+    "husky": "4",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",

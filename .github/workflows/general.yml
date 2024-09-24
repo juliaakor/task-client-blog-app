@@ -71,7 +71,7 @@ jobs:
         run: yarn install
 
       - name: Run Jest tests (placeholder)
-        run: echo "No tests available. Add tests here."
+        run: yarn test:ci
 
       - name: Run tests Cypress (placeholder)
         run: echo "No tests available. Add tests here."

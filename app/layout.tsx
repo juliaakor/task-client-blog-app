@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { Sen } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 
-import './globals.css';
+import '@app/globals.css';
 
 const sen = Sen({
   display: 'swap',
@@ -13,14 +15,18 @@ export const metadata: Metadata = {
   title: 'Client Blog',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const messages = await getMessages();
+
   return (
     <html lang="en" className={sen.className}>
-      <body className="antialiased bg-background text-foreground">{children}</body>
+      <body className="antialiased bg-background text-foreground">
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }

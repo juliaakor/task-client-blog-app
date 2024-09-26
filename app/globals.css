@@ -8,12 +8,14 @@
 root {
   --background: var(--c-white-01);
   --foreground: var(--c-dark-blue);
+  --bg-modal: var(--c-white-03);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--c-dark-blue);
     --foreground: var(--c-white-01);
+    --bg-modal: var(--c-light-gray);
   }
 }
 

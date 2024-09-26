@@ -1,7 +1,11 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ['./components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: [
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './lib/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   plugins: [],
   theme: {
     extend: {
@@ -13,6 +17,7 @@ const config: Config = {
         foreground: 'var(--foreground)',
         'light-blue': 'var(--c-light-blue)',
         'light-gray': 'var(--c-light-gray)',
+        modal: 'var(--bg-modal)',
         'white-01': 'var(--c-white-01)',
         'white-02': 'var(--c-white-02)',
         'white-03': 'var(--c-white-03)',

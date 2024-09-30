@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Sen } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+// eslint-disable-next-line camelcase
+import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 
 import '@app/globals.css';
 
@@ -17,9 +18,12 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  unstable_setRequestLocale(params.locale);
   const messages = await getMessages();
 
   return (

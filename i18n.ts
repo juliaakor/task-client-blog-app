@@ -18,4 +18,8 @@ export const routing = defineRouting({
   locales,
 });
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export const { Link, redirect, usePathname, useRouter } = createSharedPathnamesNavigation(routing);

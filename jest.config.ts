@@ -6,7 +6,7 @@ const createJestConfig = nextJest({
 });
 
 const config: Config = {
-  collectCoverage: true,
+  collectCoverage: false,
   collectCoverageFrom: ['app/**/*.ts', 'lib/**/*.ts', 'components/**/*.ts', 'api/**/*.ts', '!**/types.ts'],
   coverageProvider: 'v8',
   coverageThreshold: {

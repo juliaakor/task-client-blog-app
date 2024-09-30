@@ -1,18 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 
-import { getRedirectUrlIfNeeded } from '@lib/routing/getRedirectUrlIfNeeded';
+import { routing } from '@/i18n';
+import { getRedirectUrlForLocales } from '@lib/routing/getRedirectUrlForLocales';
 
-const handleI18nRouting = createMiddleware({
-  defaultLocale: 'en',
-
-  locales: ['en', 'ru'],
-});
+const handleI18nRouting = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const redirectedUrl = getRedirectUrlIfNeeded(pathname, request);
+  const redirectedUrl = getRedirectUrlForLocales(pathname, request);
   if (redirectedUrl) {
     return NextResponse.redirect(redirectedUrl);
   }

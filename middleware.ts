@@ -16,3 +16,7 @@ export default function middleware(request: NextRequest) {
 
   return handleI18nRouting(request);
 }
+
+export const config = {
+  matcher: ['/', '/([a-z]{2,})/:path*'],
+};

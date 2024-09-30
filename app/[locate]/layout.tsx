@@ -3,7 +3,7 @@ import { Sen } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
-import '@app/globals.css';
+import '@styles/globals.css';
 
 import { LayoutProps } from './types';
 

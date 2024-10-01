@@ -21,8 +21,12 @@
     "test:all": "jest --watchAll",
     "test:ci": "jest --ci --passWithNoTests",
     "test:coverage": "rimraf ./coverage && jest --coverage && open coverage/lcov-report/index.html",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "playwright:i": "playwright install",
+    "playwright": "playwright test",
+    "playwright:ui": "playwright test --ui",
+    "playwright:report": "playwright show-report",
+    "playwright:headless": "playwright test --headed",
+    "playwright:trace": "playwright test --trace on"
   },
   "husky": {
     "hooks": {
@@ -39,6 +43,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@playwright/test": "^1.47.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
@@ -46,7 +51,6 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",
-    "cypress": "^13.14.2",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "14.2.13",

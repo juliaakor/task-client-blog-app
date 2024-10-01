@@ -45,7 +45,10 @@ At the moment, the following scripts can be run within the project:
 - test:all - run tests and watch files for changes to rerun all tests when something changes;
 - test:ci - running tests in a ci environment;
 - test:coverage - delete the coverage folder and open a new coverage report after the tests have been executed;
-- cypress:open - opens the cypress Test Runner UI for interactive testing;
-- cypress:run - runs cypress tests headlessly in the terminal;
+- playwright - to run playwright tests;
+- playwright:ui - to open playwright tests in ui mode;
+- playwright:report - to open playwright report after running tests;
+- playwright:headless - opens playwright to run tests in a headed mode;
+- playwright:trace - runs playwright tests for debugging with trace;
 
 **Note**: The following commands use the `.gitignore` file instead of their own ignore file: `lint`, `lint:fix`, `prettier`, `prettier:fix`.

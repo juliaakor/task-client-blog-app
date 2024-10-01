@@ -629,6 +629,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@emailjs/browser@npm:4.4.1"
+  checksum: 7c33dae1062c7f3106c38c290643c1096505762dea19a71d89515890fb204f5ae3e2954eec3d4c4de1aa6ea586e956d88cde2e5b9a2e4075ea849de9735b6d16
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -7709,6 +7716,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^19.5.0
     "@commitlint/config-conventional": ^19.5.0
+    "@emailjs/browser": ^4.4.1
     "@playwright/test": ^1.47.2
     "@testing-library/dom": ^10.4.0
     "@testing-library/jest-dom": ^6.5.0
@@ -7741,6 +7749,7 @@ __metadata:
     ts-node: ^10.9.2
     typescript: ^5.5.4
     typescript-eslint: ^7.16.1
+    zod: ^3.23.8
   languageName: unknown
   linkType: soft
 
@@ -8467,5 +8476,12 @@ __metadata:
   version: 1.1.1
   resolution: "yocto-queue@npm:1.1.1"
   checksum: f2e05b767ed3141e6372a80af9caa4715d60969227f38b1a4370d60bffe153c9c5b33a862905609afc9b375ec57cd40999810d20e5e10229a204e8bde7ef255c
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.23.8":
+  version: 3.23.8
+  resolution: "zod@npm:3.23.8"
+  checksum: 15949ff82118f59c893dacd9d3c766d02b6fa2e71cf474d5aa888570c469dbf5446ac5ad562bb035bf7ac9650da94f290655c194f4a6de3e766f43febd432c5c
   languageName: node
   linkType: hard

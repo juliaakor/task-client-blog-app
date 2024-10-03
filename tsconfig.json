@@ -24,7 +24,8 @@
       "@app/*": ["./app/*"],
       "@lib/*": ["./lib/*"],
       "@constants/*": ["./constants/*"],
-      "@messages/*": ["./messages/*"]
+      "@messages/*": ["./messages/*"],
+      "@hooks/*": ["./hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

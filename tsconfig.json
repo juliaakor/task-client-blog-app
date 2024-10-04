@@ -22,6 +22,7 @@
       "@/*": ["./*"],
       "@styles/*": ["./styles/*"],
       "@app/*": ["./app/*"],
+      "@assets/*": ["./assets/*"],
       "@lib/*": ["./lib/*"],
       "@constants/*": ["./constants/*"],
       "@messages/*": ["./messages/*"],

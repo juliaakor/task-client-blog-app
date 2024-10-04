@@ -5,6 +5,8 @@ import { getMessages } from 'next-intl/server';
 
 import '@styles/globals.css';
 
+import { Provider } from '@/components/Provider';
+
 import { LayoutProps } from './types';
 
 const sen = Sen({
@@ -23,7 +25,9 @@ export default async function RootLayout({ children, params: { locale } }: Reado
   return (
     <html lang={locale} className={sen.className}>
       <body className="antialiased bg-background text-foreground">
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <Provider> {children}</Provider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -19,7 +19,7 @@ export const Socials = ({ className = '', iconStyle = '', isIncluded, links }: S
     <div className={`flex ${className}`}>
       {SOCIALS_ICONS.map(({ alt, icon }) =>
         isIncluded.includes(alt.toLocaleLowerCase() as AvailableSocialsUnion) ? (
-          <Link key={alt} href={links?.[alt.toLocaleLowerCase()] || ''}>
+          <Link key={alt} href={links?.[alt.toLocaleLowerCase() as AvailableSocialsUnion] || ''}>
             <Image className={`${iconStyle} fill-current`} src={icon} alt={alt} />
           </Link>
         ) : null

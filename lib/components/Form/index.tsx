@@ -1,4 +1,4 @@
-import { Formik, Form as FormikForm, FormikValues } from 'formik';
+import { Formik, Form as FormikForm, FormikHelpers, FormikValues } from 'formik';
 import { useId } from 'react';
 import { toFormikValidationSchema } from 'zod-formik-adapter';
 
@@ -13,11 +13,15 @@ export const Form = <T extends FormikValues>({
 }: FormProps<T>) => {
   const formId = useId();
 
+  const handleSubmit = (values: T, helpers: FormikHelpers<T>) => {
+    onSubmit(values, helpers);
+  };
+
   return (
     <Formik
       initialValues={defaultValues}
       validationSchema={toFormikValidationSchema(zodSchema)}
-      onSubmit={(values, helpers) => onSubmit(values, helpers)}
+      onSubmit={handleSubmit}
       {...props}
     >
       {({ handleSubmit }) => (

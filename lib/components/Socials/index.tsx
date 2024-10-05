@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -16,11 +17,11 @@ const SOCIALS_ICONS = [
 
 export const Socials = ({ className = '', iconStyle = '', isIncluded, links }: SocialsProps) => {
   return (
-    <div className={`flex ${className}`}>
+    <div className={clsx('flex', className)}>
       {SOCIALS_ICONS.map(({ alt, icon }) =>
         isIncluded.includes(alt.toLocaleLowerCase() as AvailableSocialsUnion) ? (
           <Link key={alt} href={links?.[alt.toLocaleLowerCase() as AvailableSocialsUnion] || ''}>
-            <Image className={`${iconStyle} fill-current`} src={icon} alt={alt} />
+            <Image className={clsx('filter hover:brightness-200', iconStyle)} src={icon} alt={alt} />
           </Link>
         ) : null
       )}

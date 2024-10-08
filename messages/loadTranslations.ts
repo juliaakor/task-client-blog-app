@@ -1,4 +1,4 @@
-const translationFiles = ['about', 'author', 'blog', 'contact', 'home', 'policy'];
+const translationFiles = ['about', 'testimonials', 'blog', 'contact', 'home', 'policy', 'common'];
 
 export const getTranslationsByLocale = async (locale: string) => {
   const translations = await Promise.all(

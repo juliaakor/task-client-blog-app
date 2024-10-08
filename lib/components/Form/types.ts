@@ -7,5 +7,5 @@ export interface FormProps<T extends FormikValues> extends Omit<FormikConfig<T>,
   defaultValues: T;
   onSubmit: (values: T, helpers: FormikHelpers<T>) => void;
   zodSchema: ZodSchema<T>;
-  className: string;
+  className?: string;
 }

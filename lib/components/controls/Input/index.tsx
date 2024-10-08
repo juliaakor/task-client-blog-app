@@ -2,9 +2,10 @@ import clsx from 'clsx';
 import { useField } from 'formik';
 import { useId } from 'react';
 
+import { defaultControlStyle } from '@/lib/components/controls/defaults';
+import { ErrorMessage } from '@/lib/components/ErrorMessage';
+
 import { InputProps } from './types';
-import { ErrorMessage } from '../../ErrorMessage';
-import { defaultControlStyle } from '../defaults';
 
 export const Input = ({ className, label, name, type, ...props }: InputProps) => {
   const [field, meta] = useField(name);

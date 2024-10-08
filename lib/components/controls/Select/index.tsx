@@ -2,8 +2,9 @@ import clsx from 'clsx';
 import { useField } from 'formik';
 import { useId } from 'react';
 
-import { ErrorMessage } from '../../ErrorMessage';
-import { defaultControlStyle } from '../defaults';
+import { defaultControlStyle } from '@/lib/components/controls/defaults';
+import { ErrorMessage } from '@/lib/components/ErrorMessage';
+
 import { SelectProps } from './types';
 
 export const Select = ({ className, label, name, options, ...props }: SelectProps) => {

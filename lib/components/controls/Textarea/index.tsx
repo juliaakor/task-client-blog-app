@@ -2,11 +2,12 @@ import clsx from 'clsx';
 import { useField } from 'formik';
 import { useId } from 'react';
 
-import { InputProps } from './types';
-import { ErrorMessage } from '../../ErrorMessage';
-import { defaultControlStyle } from '../defaults';
+import { defaultControlStyle } from '@/lib/components/controls/defaults';
+import { ErrorMessage } from '@/lib/components/ErrorMessage';
 
-export const Textarea = ({ className, label, name, ...props }: InputProps) => {
+import { TextareaProps } from './types';
+
+export const Textarea = ({ className, label, name, ...props }: TextareaProps) => {
   const [field, meta] = useField(name);
   const textareaId = name + useId();
 

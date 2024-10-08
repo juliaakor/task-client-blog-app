@@ -8,7 +8,7 @@ const buttonStyles: Record<string, string> = {
 };
 
 export const Button = ({ children, className, label, name, styleType, ...props }: ButtonProps) => {
-  const buttonClasses = clsx('w-full p-4 px-5 text-base font-bold text-dark-blue', buttonStyles[styleType], className);
+  const buttonClasses = clsx('w-full p-4 px-5 font-bold text-dark-blue', buttonStyles[styleType], className);
 
   return (
     <button className={buttonClasses} type="button" aria-label={name} {...props}>

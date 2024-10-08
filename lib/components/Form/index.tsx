@@ -6,6 +6,7 @@ import { FormProps } from './types';
 
 export const Form = <T extends FormikValues>({
   children,
+  className,
   defaultValues,
   onSubmit,
   zodSchema,
@@ -25,7 +26,7 @@ export const Form = <T extends FormikValues>({
       {...props}
     >
       {({ handleSubmit }) => (
-        <FormikForm id={formId} noValidate onSubmit={handleSubmit}>
+        <FormikForm id={formId} noValidate onSubmit={handleSubmit} className={className}>
           {children}
         </FormikForm>
       )}

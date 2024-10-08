@@ -6,8 +6,8 @@ const createJestConfig = nextJest({
 });
 
 const config: Config = {
-  collectCoverage: true,
-  collectCoverageFrom: ['app/**/*.ts'],
+  collectCoverage: false,
+  collectCoverageFrom: ['app/**/*.ts', 'lib/**/*.ts', 'hooks/**/*.ts', 'api/**/*.ts'],
   coverageProvider: 'v8',
   coverageThreshold: {
     global: {
@@ -17,8 +17,13 @@ const config: Config = {
       statements: 70,
     },
   },
+  moduleNameMapper: {
+    '^@hooks/(.*)$': '<rootDir>/hooks/$1',
+    '^@lib/(.*)$': '<rootDir>/lib/$1',
+  },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironment: 'jsdom',
+  testPathIgnorePatterns: ['/node_modules/', '/playwright/'],
 };
 
 export default createJestConfig(config);

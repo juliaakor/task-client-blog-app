@@ -17,7 +17,7 @@ export default function middleware(request: NextRequest) {
 
   const redirectedUrl = getRedirectUrlForLocales(pathname, request);
   if (redirectedUrl) {
-    return NextResponse.redirect(redirectedUrl);
+    return NextResponse.redirect(new URL(redirectedUrl, request.url));
   }
 
   return handleI18nRouting(request);

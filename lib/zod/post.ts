@@ -1,19 +1,19 @@
 import { z } from 'zod';
 
-import { CategoriesValues, Categories, Tags, TagsValues } from '@constants/routes';
+import { Categories, Tags } from '@constants/entities';
 
-import { dateSchema, idSchema, requiredStrSchema, requiredUrlSchema } from './common';
+import { idSchema, requiredStrSchema, StaticImageDataSchema } from './common';
 
 export const PostSchema = z.object({
-  category: z.enum(CategoriesValues as [Categories, ...Categories[]]),
+  category: z.nativeEnum(Categories),
   content: requiredStrSchema,
-  createdAt: dateSchema,
+  createdAt: requiredStrSchema.min(20),
   id: idSchema,
-  image: requiredUrlSchema.optional(),
+  image: StaticImageDataSchema.optional(),
   isFeatured: z.boolean().default(false),
   name: requiredStrSchema.min(10),
   preview: requiredStrSchema.max(300),
-  tags: z.array(z.enum(TagsValues as [Tags, ...Tags[]])).optional(),
+  tags: z.array(z.nativeEnum(Tags)).optional(),
   userId: idSchema,
 });
 

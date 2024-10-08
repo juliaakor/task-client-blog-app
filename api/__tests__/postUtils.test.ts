@@ -42,6 +42,7 @@ describe('fetchAllPostsByParams', () => {
           id: 'a3bb189e-8bf9-4883-bb2f-2c1b292f9a56',
           name: 'Post Title Example',
           preview: 'This is a preview of Post Title Example',
+          tags: [],
           userId: 'f47ac10b-58cc-4372-a567-0e02b2c3d479',
         },
       ],

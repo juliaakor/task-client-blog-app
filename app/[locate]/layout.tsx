@@ -5,7 +5,7 @@ import { getMessages } from 'next-intl/server';
 
 import '@styles/globals.css';
 
-import { Provider } from '@/components/Provider';
+import { Provider } from '@components/Provider';
 
 import { LayoutProps } from './types';
 

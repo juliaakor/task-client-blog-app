@@ -13,7 +13,7 @@ export const PostSchema = z.object({
   isFeatured: z.boolean().default(false),
   name: requiredStrSchema.min(10),
   preview: requiredStrSchema.max(300),
-  tags: z.array(z.nativeEnum(Tags)).optional(),
+  tags: z.array(z.nativeEnum(Tags)),
   userId: idSchema,
 });
 

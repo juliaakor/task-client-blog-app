@@ -26,6 +26,7 @@
       "@assets/*": ["./assets/*"],
       "@lib/*": ["./lib/*"],
       "@constants/*": ["./constants/*"],
+      "@components/*": ["./components/*"],
       "@messages/*": ["./messages/*"],
       "@hooks/*": ["./hooks/*"]
     }

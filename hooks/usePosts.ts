@@ -14,7 +14,7 @@ export const useGetPosts = ({ category, limit, page, tags }: GetPostsProps) => {
 
 export const useGetPostsByUserId = ({ category, limit, page, tags, userId }: GetPostsProps) => {
   return useQuery({
-    queryFn: () => getPostsByUserId({ category, limit, page, tags }),
+    queryFn: () => getPostsByUserId({ category, limit, page, tags, userId }),
     queryKey: ['posts', page, userId, limit, category, tags],
   });
 };

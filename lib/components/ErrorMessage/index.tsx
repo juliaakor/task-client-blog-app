@@ -1,7 +1,8 @@
 import clsx from 'clsx';
+
 import { ErrorMessageProps } from './types';
 
-export const ErrorMessage = ({ isError, errorText }: ErrorMessageProps) => {
+export const ErrorMessage = ({ errorText, isError }: ErrorMessageProps) => {
   return (
     <div
       className={clsx(

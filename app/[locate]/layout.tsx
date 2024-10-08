@@ -5,6 +5,7 @@ import { getMessages } from 'next-intl/server';
 
 import '@styles/globals.css';
 
+import { locales } from '@/i18n';
 import { Provider } from '@components/Provider';
 
 import { LayoutProps } from './types';
@@ -31,4 +32,8 @@ export default async function RootLayout({ children, params: { locale } }: Reado
       </body>
     </html>
   );
+}
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ lang: locale }));
 }

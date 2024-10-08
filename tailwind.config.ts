@@ -1,15 +1,20 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ['./components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: [
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './lib/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   plugins: [],
   theme: {
     extend: {
       colors: {
         background: 'var(--background)',
         'beige-01': 'var(--c-beige-01)',
-        'dark-blue': 'var--c-dark-blue)',
+        'dark-blue': 'var(--c-dark-blue)',
         'dark-gray': 'var(--c-dark-gray)',
+        error: 'var(--c-error)',
         foreground: 'var(--foreground)',
         'light-blue': 'var(--c-light-blue)',
         'light-gray': 'var(--c-light-gray)',

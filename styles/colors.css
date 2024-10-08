@@ -4,9 +4,10 @@
   --c-white-03: rgba(244, 240, 248, 1);
   --c-beige-01: rgba(251, 246, 234, 1);
   --c-yellow: rgba(255, 208, 80, 1);
+  --c-red-01: rgb(209 53 53);
   --c-yellow-hover: rgba(237, 193, 74, 1);
   --c-dark-blue: rgba(35, 37, 54, 1);
   --c-light-blue: rgba(89, 46, 169, 1);
   --c-dark-gray: rgba(76, 76, 76, 1);
-  --c-light-gray: rgba(109, 110, 118, 1);
+  --c-light-gray: rgba(109, 110, 118, 0.5);
 }

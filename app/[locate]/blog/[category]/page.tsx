@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
-import { Categories, CategoriesValues } from '@constants/routes';
+import { Categories, CategoriesValues } from '@/constants/entities';
 import { toPascalCaseWithSpaces } from '@lib/format/toPascalCaseWithSpaces';
 
 import { CategoryProps } from './types';

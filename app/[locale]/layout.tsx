@@ -35,5 +35,5 @@ export default async function RootLayout({ children, params: { locale } }: Reado
 }
 
 export async function generateStaticParams() {
-  return locales.map((locale) => ({ lang: locale }));
+  return locales.map((locale) => ({ locale }));
 }

@@ -6,13 +6,23 @@ import { getRedirectUrlForLocales } from '@lib/routing/getRedirectUrlForLocales'
 
 const handleI18nRouting = createMiddleware(routing);
 
+const API_PATH = '/api/';
+
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  if (pathname.startsWith(API_PATH)) {
+    return NextResponse.next();
+  }
+
   const redirectedUrl = getRedirectUrlForLocales(pathname, request);
   if (redirectedUrl) {
-    return NextResponse.redirect(redirectedUrl);
+    return NextResponse.redirect(new URL(redirectedUrl, request.url));
   }
 
   return handleI18nRouting(request);
 }
+
+export const config = {
+  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico).*)'],
+};

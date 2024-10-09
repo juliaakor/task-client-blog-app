@@ -1,0 +1,28 @@
+{
+  "logoTitle": "Блог клиентов Modsen",
+  "navigation": {
+    "home": "Главная",
+    "blog": "Блог",
+    "about": "О нас",
+    "contact": "Свяжитесь с нами",
+    "policy": "Политика конфиденциальности"
+  },
+  "lettersSection": {
+    "title": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",
+    "form": {
+      "placeholder": "Enter Your Email",
+      "submitButtonText": "Подписаться"
+    }
+  },
+  "contactInfo": {
+    "address": "Улица Фин 118 2561 Минск\nHello@finsweet.com  020 7993 2905"
+  },
+  "videoButtonText": "Видео о нас",
+  "buttons": {
+    "nextButtonTitle": "Следующая",
+    "prevButtonTitle": "Предыдущая",
+    "viewAllButtonTitle": "Смотреть все",
+    "readMoreButtonTitle": "Подробнее",
+    "aboutUsButtonTitle": "Узнайте нашу историю"
+  }
+}

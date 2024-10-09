@@ -1,0 +1,28 @@
+{
+  "logoTitle": "Modsen Client Blog",
+  "navigation": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About us",
+    "contact": "Contact us",
+    "policy": "Privacy Policy"
+  },
+  "lettersSection": {
+    "title": "Subscribe to our news letter to get latest updates and news",
+    "form": {
+      "placeholder": "Enter Your Email",
+      "submitButtonText": "Subscribe"
+    }
+  },
+  "contactInfo": {
+    "address": "Finstreet 118 2561 Fintown\nHello@finsweet.com  020 7993 2905"
+  },
+  "videoButtonText": "Video about us",
+  "buttons": {
+    "nextButtonTitle": "Next",
+    "prevButtonTitle": "Prev",
+    "viewAllButtonTitle": "View All",
+    "readMoreButtonTitle": "Read More",
+    "aboutUsButtonTitle": "Discover our story"
+  }
+}

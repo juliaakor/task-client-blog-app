@@ -21,10 +21,16 @@
     "paths": {
       "@/*": ["./*"],
       "@styles/*": ["./styles/*"],
+      "@api/*": ["./api/*"],
+      "@app/*": ["./app/*"],
+      "@assets/*": ["./assets/*"],
+      "@lib/*": ["./lib/*"],
+      "@constants/*": ["./constants/*"],
       "@components/*": ["./components/*"],
-      "@constants/*": ["./constants/*"]
+      "@messages/*": ["./messages/*"],
+      "@hooks/*": ["./hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "cypress", "cypress.config.ts"]
 }

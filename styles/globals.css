@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@styles/colors.css';
+@import '@styles/reset.css';
+
+:root {
+  --background: var(--c-white-01);
+  --foreground: var(--c-dark-blue);
+  --bg-modal: var(--c-white-03);
+  --c-error: var(--c-red-01);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--c-dark-blue);
+    --foreground: var(--c-white-01);
+    --bg-modal: var(--c-light-gray);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

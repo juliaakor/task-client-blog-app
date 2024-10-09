@@ -1,9 +1,10 @@
-import { Metadata } from 'next';
+/* eslint-disable camelcase */
+import { unstable_setRequestLocale } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'Contact Us',
-};
+import { HomeProps } from '@app/[locale]/types';
 
-export default function Contact() {
+export default function Contact({ params: { locale } }: HomeProps) {
+  unstable_setRequestLocale(locale);
+
   return <main>Contact</main>;
 }

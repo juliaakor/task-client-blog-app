@@ -1,9 +1,10 @@
-import { Metadata } from 'next';
+/* eslint-disable camelcase */
+import { unstable_setRequestLocale } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'Blog',
-};
+import { HomeProps } from '@app/[locale]/types';
 
-export default function Blog() {
+export default function Blog({ params: { locale } }: HomeProps) {
+  unstable_setRequestLocale(locale);
+
   return <main>Blog</main>;
 }

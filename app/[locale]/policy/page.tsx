@@ -1,9 +1,10 @@
-import { Metadata } from 'next';
+/* eslint-disable camelcase */
+import { unstable_setRequestLocale } from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy',
-};
+import { HomeProps } from '@app/[locale]/types';
 
-export default function PrivacyPolicy() {
+export default function PrivacyPolicy({ params: { locale } }: HomeProps) {
+  unstable_setRequestLocale(locale);
+
   return <main>Privacy Policy</main>;
 }

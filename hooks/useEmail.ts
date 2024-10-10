@@ -9,9 +9,8 @@ const templatesId = {
   subscription: ENV.EMAILJS_TEMPLATE_ID_SUBSCRIPTION,
 };
 
-const sendEmailToGmailService = (templateId: string, data: unknown, schema: z.ZodSchema) => {
+const sendEmailToGmailService = (templateId: string, data: unknown, schema: z.ZodSchema) =>
   sendEmail(ENV.EMAILJS_SERVICE_ID, templateId, ENV.EMAILJS_PUBLIC_KEY, data, schema);
-};
 
 export const useEmail = () => {
   const sendFeedbackEmail = (data: FeedbackEmailForm) =>

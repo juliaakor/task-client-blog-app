@@ -10,19 +10,34 @@
   "lettersSection": {
     "title": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",
     "form": {
-      "placeholder": "Enter Your Email",
-      "submitButtonText": "Подписаться"
+      "placeholder": "Введите вашу почту",
+      "submitButtonText": "Подписаться",
+      "validationMessages": {
+        "required": "Поле обязательно",
+        "email": "Email не действителен"
+      }
     }
+  },
+  "joinSection": {
+    "title": "Присоединяйтесь к нашей команде, чтобы стать частью нашей истории",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "redirectButtonTitle": "Присоединиться"
   },
   "contactInfo": {
     "address": "Улица Фин 118 2561 Минск\nHello@finsweet.com  020 7993 2905"
   },
-  "videoButtonText": "Видео о нас",
   "buttons": {
     "nextButtonTitle": "Следующая",
     "prevButtonTitle": "Предыдущая",
     "viewAllButtonTitle": "Смотреть все",
     "readMoreButtonTitle": "Подробнее",
-    "aboutUsButtonTitle": "Узнайте нашу историю"
+    "aboutUsButtonTitle": "Узнайте нашу историю",
+    "videoButtonTitle": "Видео о нас"
+  },
+  "toasts": {
+    "failedSubscribe": "Извините, что-то случилось с почтовым сервисом, попробуйте подписаться позже",
+    "successSubscribe": "Вы успешно подписались на наш блог",
+    "failedSendFeedback": "Извините, мы не смогли отправить ваш отзыв, повторите попытку позже",
+    "successSendFeedback": "Ваш отзыв успешно отправлен"
   }
 }

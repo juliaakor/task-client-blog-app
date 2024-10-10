@@ -1,13 +1,13 @@
-import postHeader1 from '@assets/posts/009ea3ac2018c459ce84161d1b88796f.png';
-import postHeader2 from '@assets/posts/331b3b8ac3a1d67fcd41a038e1383b54.png';
-import postHeader3 from '@assets/posts/4dcad262f91134ac8725ebf07c99c41e.png';
-import postHeader4 from '@assets/posts/56d20f4f437855e425ccde79eec2a93c.png';
-import postHeader5 from '@assets/posts/70bfdb040db12e0c7339e02bdde34686.png';
-import postHeader6 from '@assets/posts/98174abefa2a086436f620be49d2f85c.png';
-import postHeader7 from '@assets/posts/bd83d188028be8a810fd08204554ab09.png';
-import postHeader8 from '@assets/posts/d6d7e647969a956db01585c186527fed.png';
-import featuredPostHeader from '@assets/posts/featured.png';
-import homePagePostHeader from '@assets/posts/homePage.png';
+import featuredPostHeader from '@assets/posts/buildingWithPalmTrees.png';
+import highModernBuildings from '@assets/posts/highModernBuildings.png';
+import manAtTheComputer from '@assets/posts/manAtTheComputer.png';
+import peopleLookingAtTheReport from '@assets/posts/peopleLookingAtTheReport.png';
+import peopleNearTheBoard from '@assets/posts/peopleNearTheBoard.png';
+import peopleWalkingInTheOffice from '@assets/posts/peopleWalkingInTheOffice.png';
+import personInTheOffice from '@assets/posts/personInTheOffice.png';
+import homePagePostHeader from '@assets/posts/personSittingWithLaptop.png';
+import teamAtTheTable from '@assets/posts/teamAtTheTable.png';
+import teamLooksIntoLaptop from '@assets/posts/teamLooksIntoLaptop.png';
 
 export default [
   {
@@ -15,7 +15,7 @@ export default [
     content: 'content 1',
     createdAt: '2024-09-26T14:56:27.274Z',
     id: '10fefb86-a5f8-4716-b389-845d23bdcf62',
-    image: postHeader1,
+    image: teamLooksIntoLaptop,
     isFeatured: false,
     name: 'Aliquam rem aspernatur.',
     preview: 'preview 1',
@@ -27,7 +27,7 @@ export default [
     content: 'content 2',
     createdAt: '2024-09-27T06:58:14.317Z',
     id: 'c280e113-b92c-4d71-b580-4992c44223d0',
-    image: postHeader2,
+    image: teamAtTheTable,
     isFeatured: false,
     name: 'Modi corrupti fugit.',
     preview: 'preview 2',
@@ -39,7 +39,7 @@ export default [
     content: 'content 3',
     createdAt: '2024-09-27T01:16:34.289Z',
     id: '29f5beff-7847-4c76-8411-0cbb6e5a8114',
-    image: postHeader3,
+    image: personInTheOffice,
     isFeatured: false,
     name: 'Et pariatur omnis quia repellendus deserunt provident.',
     preview: 'preview 3',
@@ -51,7 +51,7 @@ export default [
     content: 'content 4',
     createdAt: '2024-09-26T13:32:24.937Z',
     id: '8ce1b4e3-8d16-4d9b-8080-8ad70cfe7b49',
-    image: postHeader4,
+    image: peopleWalkingInTheOffice,
     isFeatured: false,
     name: 'Aliquid quia iusto laboriosam praesentium.',
     preview: 'preview 4',
@@ -63,7 +63,7 @@ export default [
     content: 'content 5',
     createdAt: '2024-09-26T11:52:27.415Z',
     id: '389babc1-d98e-44b5-882b-da08a5fb7e10',
-    image: postHeader5,
+    image: peopleNearTheBoard,
     isFeatured: false,
     name: 'Impedit eius minima.',
     preview: 'preview 5',
@@ -75,7 +75,7 @@ export default [
     content: 'content 6',
     createdAt: '2024-09-26T17:54:36.280Z',
     id: '9e77d9c0-b862-4e56-952c-97e4ba15f6d4',
-    image: postHeader6,
+    image: peopleLookingAtTheReport,
     isFeatured: false,
     name: 'Accusamus voluptatum officia ullam harum iusto.',
     preview: 'preview 6',
@@ -87,7 +87,7 @@ export default [
     content: 'content 7',
     createdAt: '2024-09-26T14:45:51.307Z',
     id: '482e0583-e918-4778-add5-2e9ff547eb9a',
-    image: postHeader7,
+    image: manAtTheComputer,
     isFeatured: false,
     name: 'In magnam ex.',
     preview: 'preview 7',
@@ -99,7 +99,7 @@ export default [
     content: 'content 8',
     createdAt: '2024-09-27T02:29:02.977Z',
     id: 'bd6cd01c-c414-4bf2-938e-4df766cadb64',
-    image: postHeader8,
+    image: highModernBuildings,
     isFeatured: false,
     name: 'Veritatis natus quisquam sit id ad incidunt provident iusto possimus.',
     preview: 'preview 8',
@@ -135,7 +135,7 @@ export default [
     content: 'content 11',
     createdAt: '2024-09-27T09:21:32.576Z',
     id: '4fe7ab67-84e4-4e0c-a8e3-91fdce003c66',
-    image: homePagePostHeader,
+    image: highModernBuildings,
     isFeatured: false,
     name: 'Totam pariatur sapiente consequuntur ea.',
     preview: 'preview 11',
@@ -147,7 +147,7 @@ export default [
     content: 'content 12',
     createdAt: '2024-09-27T09:21:32.576Z',
     id: 'd72e14b3-1b86-4b28-8fa5-32bd52da9fa0',
-    image: homePagePostHeader,
+    image: highModernBuildings,
     isFeatured: false,
     name: 'Totam pariatur sapiente consequuntur ea.',
     preview: 'preview 12',
@@ -159,7 +159,7 @@ export default [
     content: 'content 13',
     createdAt: '2024-09-27T09:21:32.576Z',
     id: '4cb15df7-a74b-45b3-a41b-55a8868e230b',
-    image: homePagePostHeader,
+    image: highModernBuildings,
     isFeatured: false,
     name: 'Totam pariatur sapiente consequuntur ea.',
     preview: 'preview 13',

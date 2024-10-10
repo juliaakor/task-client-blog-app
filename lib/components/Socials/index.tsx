@@ -20,7 +20,7 @@ export const Socials = ({ className = '', iconStyle = '', isIncluded, links }: S
     <div className={clsx('flex', className)}>
       {SOCIALS_ICONS.map(({ alt, icon }) =>
         isIncluded.includes(alt.toLocaleLowerCase() as AvailableSocialsUnion) ? (
-          <Link key={alt} href={links?.[alt.toLocaleLowerCase() as AvailableSocialsUnion] || ''}>
+          <Link key={alt} href={links?.[alt.toLocaleLowerCase() as AvailableSocialsUnion] || ''} target="_blank">
             <Image className={clsx('filter hover:brightness-200', iconStyle)} src={icon} alt={alt} />
           </Link>
         ) : null

@@ -10,4 +10,5 @@ export interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElemen
   label: string;
   name: string;
   options: SelectOptionType[];
+  defaultLabel: string;
 }

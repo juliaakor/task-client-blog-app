@@ -18,6 +18,7 @@ const config: Config = {
         foreground: 'var(--foreground)',
         'light-blue': 'var(--c-light-blue)',
         'light-gray': 'var(--c-light-gray)',
+        modal: 'var(--bg-modal)',
         'white-01': 'var(--c-white-01)',
         'white-02': 'var(--c-white-02)',
         'white-03': 'var(--c-white-03)',

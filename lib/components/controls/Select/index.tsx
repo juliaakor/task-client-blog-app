@@ -7,7 +7,7 @@ import { ErrorMessage } from '@/lib/components/ErrorMessage';
 
 import { SelectProps } from './types';
 
-export const Select = ({ className, label, name, options, ...props }: SelectProps) => {
+export const Select = ({ className, defaultLabel, label, name, options, ...props }: SelectProps) => {
   const [field, meta] = useField(name);
   const selectId = name + useId();
 
@@ -16,7 +16,7 @@ export const Select = ({ className, label, name, options, ...props }: SelectProp
       <ErrorMessage isError={meta.touched && !!meta.error} errorText={meta.error} />
       <select className={clsx(defaultControlStyle, 'py-4 pl-6')} aria-label={label} id={selectId} {...field} {...props}>
         <option value="" disabled>
-          Select an option
+          {defaultLabel}
         </option>
         {options.map((option) => (
           <option key={option.value} value={option.value}>

@@ -12,28 +12,6 @@ import RobertFoxAvatar from '@assets/authors/RobertFox.png';
 export default [
   {
     about:
-      'Sapiente esse praesentium omnis laudantium voluptatum. Placeat ipsam mollitia perferendis accusamus consequatur recusandae repellendus blanditiis ea. Error iste nesciunt eum modi. Odit itaque debitis at aut quibusdam reiciendis. Hic nostrum ut eligendi consectetur deleniti sint. Officia aspernatur dicta eaque harum explicabo maxime perferendis error.',
-    avatar: AndrewJonhsonAvatar,
-    company: 'company 1',
-    createdAt: '2024-09-26T22:33:51.317Z',
-    id: 'f3bd8697-2631-4714-a6e7-584597b60b08',
-    name: 'Andrew Jonhson',
-    role: 'role 1',
-    socials: {},
-  },
-  {
-    about:
-      'Quos deserunt possimus ea accusantium iure illum vel nesciunt fugiat. Eaque numquam nemo dicta id vero. Praesentium harum eveniet corrupti dolor itaque debitis rerum nam quos. Molestiae perferendis laudantium ad. Ducimus voluptas aperiam ipsa saepe explicabo quam delectus voluptatum.',
-    avatar: JohnDoeAvatar,
-    company: 'company 2',
-    createdAt: '2024-09-27T07:59:26.800Z',
-    id: '24045dc4-da5e-49f4-9d7f-c20fbf96c8f9',
-    name: 'John Doe',
-    role: 'role 2',
-    socials: {},
-  },
-  {
-    about:
       'Soluta recusandae distinctio. Dolorem ullam expedita saepe quos dolore quos dicta in. Saepe sint necessitatibus. Perferendis necessitatibus odio nobis aut. Ex fugit distinctio quasi deleniti atque consequatur illo aspernatur nihil.',
     avatar: FloydMilesAvatar,
     company: 'company 3',
@@ -41,7 +19,12 @@ export default [
     id: '11305024-16df-4799-a15e-0002f3dca787',
     name: 'Floyd Miles',
     role: 'role 3',
-    socials: {},
+    socials: {
+      facebook: 'https://www.facebook.com/',
+      instagram: 'https://www.instagram.com/',
+      linkedin: 'https://www.linkedin.com/',
+      twitter: 'https://x.com/',
+    },
   },
   {
     about:
@@ -118,6 +101,28 @@ export default [
     id: 'a9ed1ee0-bb19-450a-8d59-83b322a8bfcb',
     name: 'Jacob Jones',
     role: 'role 8',
+    socials: {},
+  },
+  {
+    about:
+      'Sapiente esse praesentium omnis laudantium voluptatum. Placeat ipsam mollitia perferendis accusamus consequatur recusandae repellendus blanditiis ea. Error iste nesciunt eum modi. Odit itaque debitis at aut quibusdam reiciendis. Hic nostrum ut eligendi consectetur deleniti sint. Officia aspernatur dicta eaque harum explicabo maxime perferendis error.',
+    avatar: AndrewJonhsonAvatar,
+    company: 'company 1',
+    createdAt: '2024-09-26T22:33:51.317Z',
+    id: 'f3bd8697-2631-4714-a6e7-584597b60b08',
+    name: 'Andrew Jonhson',
+    role: 'role 1',
+    socials: {},
+  },
+  {
+    about:
+      'Quos deserunt possimus ea accusantium iure illum vel nesciunt fugiat. Eaque numquam nemo dicta id vero. Praesentium harum eveniet corrupti dolor itaque debitis rerum nam quos. Molestiae perferendis laudantium ad. Ducimus voluptas aperiam ipsa saepe explicabo quam delectus voluptatum.',
+    avatar: JohnDoeAvatar,
+    company: 'company 2',
+    createdAt: '2024-09-27T07:59:26.800Z',
+    id: '24045dc4-da5e-49f4-9d7f-c20fbf96c8f9',
+    name: 'John Doe',
+    role: 'role 2',
     socials: {},
   },
 ];

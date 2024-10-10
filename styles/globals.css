@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'https://api.tiles.mapbox.com/mapbox-gl-js/v3.5.2/mapbox-gl.css';
 @import '@styles/colors.css';
 @import '@styles/reset.css';
 

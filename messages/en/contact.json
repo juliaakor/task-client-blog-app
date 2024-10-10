@@ -22,7 +22,29 @@
       "moreThan": "Should be more than",
       "email": "Email is not valid"
     },
-    "submitButtonTitle": "Send Message"
+    "submitButtonTitle": "Send Message",
+    "reasonSelectOptions": {
+      "support": "Support",
+      "sales": "Sales",
+      "feedback": "Feedback",
+      "default": "Select an option"
+    }
   },
-  "map": []
+  "offices": {
+    "rome": {
+      "address": "Piazza Venezia, Rome",
+      "country": "Italy",
+      "name": "Rome Office"
+    },
+    "canada": {
+      "address": "Parliament Hill, Ottawa",
+      "country": "Canada",
+      "name": "Ottawa Office"
+    },
+    "portugal": {
+      "address": "Praça do Comércio, Lisbon",
+      "country": "Portugal",
+      "name": "Lisbon Office"
+    }
+  }
 }

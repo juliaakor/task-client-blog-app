@@ -22,7 +22,29 @@
       "moreThan": "Должно быть больше, чем",
       "email": "Email не действителен"
     },
-    "submitButtonTitle": "Отправить сообщение"
+    "submitButtonTitle": "Отправить сообщение",
+    "reasonSelectOptions": {
+      "support": "Поддержка",
+      "sales": "Продажи",
+      "feedback": "Отзывы",
+      "default": "Выберите причину"
+    }
   },
-  "map": []
+  "offices": {
+    "rome": {
+      "address": "Площадь Венеции, Рим",
+      "country": "Италия",
+      "name": "Офис в Риме"
+    },
+    "canada": {
+      "address": "Холм Парламента, Оттава",
+      "country": "Канада",
+      "name": "Офис в Оттаве"
+    },
+    "portugal": {
+      "address": "П Praça do Comércio, Лиссабон",
+      "country": "Португалия",
+      "name": "Офис в Лиссабоне"
+    }
+  }
 }

@@ -11,18 +11,33 @@
     "title": "Subscribe to our news letter to get latest updates and news",
     "form": {
       "placeholder": "Enter Your Email",
-      "submitButtonText": "Subscribe"
+      "submitButtonText": "Subscribe",
+      "validationMessages": {
+        "required": "Field is required",
+        "email": "Email is not valid"
+      }
     }
+  },
+  "joinSection": {
+    "title": "Join our team to be a part of our story",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "redirectButtonTitle": "Join Now"
   },
   "contactInfo": {
     "address": "Finstreet 118 2561 Fintown\nHello@finsweet.com  020 7993 2905"
   },
-  "videoButtonText": "Video about us",
   "buttons": {
     "nextButtonTitle": "Next",
     "prevButtonTitle": "Prev",
     "viewAllButtonTitle": "View All",
     "readMoreButtonTitle": "Read More",
-    "aboutUsButtonTitle": "Discover our story"
+    "aboutUsButtonTitle": "Discover our story",
+    "videoButtonTitle": "Video about us"
+  },
+  "toasts": {
+    "failedSubscribe": "Sorry, something happened with the mail service, try subscribing later",
+    "successSubscribe": "You have successfully subscribed to our blog",
+    "failedSendFeedback": "Sorry, we were unable to submit your feedback, please try again later",
+    "successSendFeedback": "Your feedback has been successfully sent"
   }
 }

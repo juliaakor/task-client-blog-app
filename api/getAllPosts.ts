@@ -1,5 +1,5 @@
 import { fetchAllPostsByParams, GetPostsProps } from './postUtils';
 
-export const getAllPosts = async (params: GetPostsProps) => {
-  return fetchAllPostsByParams('/api/posts', params);
+export const getAllPosts = async (params: GetPostsProps, baseUrl?: string) => {
+  return fetchAllPostsByParams(`${baseUrl || ''}/api/posts`, params);
 };

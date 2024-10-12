@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--c-dark-blue);
+    --background: var(--c-dark-gray);
     --foreground: var(--c-white-01);
     --bg-modal: var(--c-light-gray);
   }

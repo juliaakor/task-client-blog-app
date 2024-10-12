@@ -1,8 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-import { Body1 } from '@lib/components/paragraphs/Body1';
-import { Body2 } from '@lib/components/paragraphs/Body2';
-import { Heading5 } from '@lib/components/titles/Heading5';
+import { Typography } from '@/lib/components/Typography';
 
 import { ContactInfoTranslationProps } from './types';
 
@@ -15,9 +13,15 @@ export const ContactInfo = () => {
       {contactInfo.map(({ additionalInfo, mainInfo, title }) => {
         return (
           <div key={title}>
-            <Body2 className="border-b pb-4 text-white-01 opacity-60">{title}</Body2>
-            <Heading5 className="text-white-01 pt-4 whitespace-pre">{mainInfo}</Heading5>
-            <Body1 className="text-white-01 opacity-60">{additionalInfo}</Body1>
+            <Typography tag="body2" className="border-b pb-4 text-white-01 opacity-60">
+              {title}
+            </Typography>
+            <Typography tag="h5" className="text-white-01 pt-4 whitespace-pre">
+              {mainInfo}
+            </Typography>
+            <Typography tag="body1" className="text-white-01 opacity-60">
+              {additionalInfo}
+            </Typography>
           </div>
         );
       })}

@@ -1,1 +1,43 @@
-{}
+{
+  "sectionName": "Отзывы",
+  "title": "Что говорят люди о нашем блоге",
+  "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "testimonials": [
+    {
+      "name": "Иван Петров",
+      "location": "Нью-Йорк, США",
+      "feedback": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "avatar": "https://s3-alpha-sig.figma.com/img/63bf/0ebe/baf975398b74732b52898a2562dfa9a6?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MM-ZT~0gH1JDnfM3h4AK8pdfaxA8n3mWi7NrE-BeroRYpMesVjBgVBoT-SN7or-5O473i3iUkIOw8spGXDQmGK0YvzHTycN5REfnClLNd-4mqEDSeI6TV170255AIrCS67BB~APCXknqCyDb2crKRq11jOyrvgQmE37MneWfkIzNMhCT5~VMVe5pq27xJ78uAmKAex~MYeHrgfO5Vu4cbKnIVyjKqe9hpX~7y8e2n4~2w7W26YwNAY-GaQg7r7BuG0B9reTLnhJD4Pxq7n8iDK-HQ0b6kuI~9hNp73XuLomHpSBdr6spfFuPzg~J2tHqMwwevd9JODns7hfeUCBZEA__"
+    },
+    {
+      "name": "София Картер",
+      "location": "Лос-Анджелес, США",
+      "feedback": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "avatar": "https://s3-alpha-sig.figma.com/img/63bf/0ebe/baf975398b74732b52898a2562dfa9a6?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MM-ZT~0gH1JDnfM3h4AK8pdfaxA8n3mWi7NrE-BeroRYpMesVjBgVBoT-SN7or-5O473i3iUkIOw8spGXDQmGK0YvzHTycN5REfnClLNd-4mqEDSeI6TV170255AIrCS67BB~APCXknqCyDb2crKRq11jOyrvgQmE37MneWfkIzNMhCT5~VMVe5pq27xJ78uAmKAex~MYeHrgfO5Vu4cbKnIVyjKqe9hpX~7y8e2n4~2w7W26YwNAY-GaQg7r7BuG0B9reTLnhJD4Pxq7n8iDK-HQ0b6kuI~9hNp73XuLomHpSBdr6spfFuPzg~J2tHqMwwevd9JODns7hfeUCBZEA__"
+    },
+    {
+      "name": "Лиам Джонсон",
+      "location": "Торонто, Канада",
+      "feedback": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "avatar": "https://s3-alpha-sig.figma.com/img/63bf/0ebe/baf975398b74732b52898a2562dfa9a6?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MM-ZT~0gH1JDnfM3h4AK8pdfaxA8n3mWi7NrE-BeroRYpMesVjBgVBoT-SN7or-5O473i3iUkIOw8spGXDQmGK0YvzHTycN5REfnClLNd-4mqEDSeI6TV170255AIrCS67BB~APCXknqCyDb2crKRq11jOyrvgQmE37MneWfkIzNMhCT5~VMVe5pq27xJ78uAmKAex~MYeHrgfO5Vu4cbKnIVyjKqe9hpX~7y8e2n4~2w7W26YwNAY-GaQg7r7BuG0B9reTLnhJD4Pxq7n8iDK-HQ0b6kuI~9hNp73XuLomHpSBdr6spfFuPzg~J2tHqMwwevd9JODns7hfeUCBZEA__"
+    },
+    {
+      "name": "Оливия Смит",
+      "location": "Лондон, Великобритания",
+      "feedback": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "avatar": "https://s3-alpha-sig.figma.com/img/63bf/0ebe/baf975398b74732b52898a2562dfa9a6?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MM-ZT~0gH1JDnfM3h4AK8pdfaxA8n3mWi7NrE-BeroRYpMesVjBgVBoT-SN7or-5O473i3iUkIOw8spGXDQmGK0YvzHTycN5REfnClLNd-4mqEDSeI6TV170255AIrCS67BB~APCXknqCyDb2crKRq11jOyrvgQmE37MneWfkIzNMhCT5~VMVe5pq27xJ78uAmKAex~MYeHrgfO5Vu4cbKnIVyjKqe9hpX~7y8e2n4~2w7W26YwNAY-GaQg7r7BuG0B9reTLnhJD4Pxq7n8iDK-HQ0b6kuI~9hNp73XuLomHpSBdr6spfFuPzg~J2tHqMwwevd9JODns7hfeUCBZEA__"
+    },
+    {
+      "name": "Ноа Браун",
+      "location": "Сидней, Австралия",
+      "feedback": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "avatar": "https://s3-alpha-sig.figma.com/img/63bf/0ebe/baf975398b74732b52898a2562dfa9a6?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MM-ZT~0gH1JDnfM3h4AK8pdfaxA8n3mWi7NrE-BeroRYpMesVjBgVBoT-SN7or-5O473i3iUkIOw8spGXDQmGK0YvzHTycN5REfnClLNd-4mqEDSeI6TV170255AIrCS67BB~APCXknqCyDb2crKRq11jOyrvgQmE37MneWfkIzNMhCT5~VMVe5pq27xJ78uAmKAex~MYeHrgfO5Vu4cbKnIVyjKqe9hpX~7y8e2n4~2w7W26YwNAY-GaQg7r7BuG0B9reTLnhJD4Pxq7n8iDK-HQ0b6kuI~9hNp73XuLomHpSBdr6spfFuPzg~J2tHqMwwevd9JODns7hfeUCBZEA__"
+    },
+    {
+      "name": "Эмма Дэвис",
+      "location": "Берлин, Германия",
+      "feedback": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.",
+      "avatar": "https://s3-alpha-sig.figma.com/img/63bf/0ebe/baf975398b74732b52898a2562dfa9a6?Expires=1729468800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MM-ZT~0gH1JDnfM3h4AK8pdfaxA8n3mWi7NrE-BeroRYpMesVjBgVBoT-SN7or-5O473i3iUkIOw8spGXDQmGK0YvzHTycN5REfnClLNd-4mqEDSeI6TV170255AIrCS67BB~APCXknqCyDb2crKRq11jOyrvgQmE37MneWfkIzNMhCT5~VMVe5pq27xJ78uAmKAex~MYeHrgfO5Vu4cbKnIVyjKqe9hpX~7y8e2n4~2w7W26YwNAY-GaQg7r7BuG0B9reTLnhJD4Pxq7n8iDK-HQ0b6kuI~9hNp73XuLomHpSBdr6spfFuPzg~J2tHqMwwevd9JODns7hfeUCBZEA__"
+    }
+  ]
+}

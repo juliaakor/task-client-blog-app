@@ -1,3 +1,34 @@
 {
-  "title": "О нас"
+  "title": "О нас",
+  "subTitle": "О нас",
+  "slogan": "Мы - команда авторов контента, которые делятся своими наработками",
+  "pageInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+  "infoBlocks": {
+    "mission": {
+      "sectionName": "Наша миссия",
+      "heading3": "Создание ценного контента для творческих людей по всему миру",
+      "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+    },
+    "vision": {
+      "sectionName": "Наше видение",
+      "heading3": "Платформа, позволяющая людям улучшать",
+      "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+    },
+    "team": {
+      "heading2": "Наша команда креативщиков",
+      "heading4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    },
+    "reasons": {
+      "heading2": "Почему мы создали этот блог",
+      "heading4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    }
+  },
+  "statistics": [
+    { "value": "12+", "title": "Опубликованные блоги" },
+    { "value": "18K+", "title": "Просмотров на Finsweet" },
+    { "value": "30K+", "title": "Всего активных пользователей" }
+  ]
 }

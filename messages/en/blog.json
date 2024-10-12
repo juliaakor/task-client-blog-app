@@ -23,7 +23,14 @@
   },
   "tags": {
     "title": "All Tags",
-    "values": ["Business", "Experience", "Screen", "Technology", "Marketing", "Life"]
+    "values": {
+      "business": "Business",
+      "experience": "Experience",
+      "screen": "Screen",
+      "technology": "Technology",
+      "marketing": "Marketing",
+      "life": "Life"
+    }
   },
   "search": {
     "placeholder": "Search for tag...",
@@ -33,5 +40,9 @@
     "title": "Join our team to be a part of our story",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "buttonText": "Join Now"
+  },
+  "postHeader": {
+    "dateFull": "Posted on {date}",
+    "dateShortAndAuthor": "By {author}   |   {date} "
   }
 }

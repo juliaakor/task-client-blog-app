@@ -3,6 +3,7 @@
   "date": "Последнее обновление 27 января 2022 г.",
   "info": [
     {
+      "id": "739c6ced-55fb-48ea-a893-6b0d5366f15c",
       "title": "Lorem ipsum dolor sit amet",
       "paragraphs": [
         {
@@ -12,6 +13,7 @@
       ]
     },
     {
+      "id": "6c3d7c80-7ec0-4490-929d-056e531c605a",
       "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "paragraphs": [
         {

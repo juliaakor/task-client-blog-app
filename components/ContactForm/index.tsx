@@ -1,23 +1,19 @@
 'use client';
 
+import { FormikHelpers } from 'formik';
 import { useTranslations } from 'next-intl';
 import { z } from 'zod';
 
-import { useEmail } from '@/hooks/useEmail';
-import { failSendToast, successSendToast } from '@/lib/toasts';
+import { useEmail } from '@hooks/useEmail';
 import { Button } from '@lib/components/Button';
 import { ButtonType } from '@lib/components/Button/types';
 import { Input } from '@lib/components/controls/Input';
 import { Select } from '@lib/components/controls/Select';
 import { Textarea } from '@lib/components/controls/Textarea';
 import { Form } from '@lib/components/Form';
+import { failSendToast, successSendToast } from '@lib/toasts';
 
-const defaultValues = {
-  email: '',
-  message: '',
-  name: '',
-  reason: '',
-};
+import { defaultContactValues, DefaultContactValues } from './types';
 
 export const ContactForm = () => {
   const t = useTranslations('contact');
@@ -41,10 +37,13 @@ export const ContactForm = () => {
     reason: z.string(requiredMessageObj).min(2, `${validationMessages.moreThan} 2`),
   });
 
-  // todo reset filds after submit
-  const handleSubmit = async ({ email, message, name, reason }: typeof defaultValues) => {
+  const handleSubmit = async (
+    { email, message, name, reason }: DefaultContactValues,
+    { resetForm }: FormikHelpers<DefaultContactValues>
+  ) => {
     if (await sendFeedbackEmail({ email, message, name, reason })) {
       successSendToast(successSendFeedback);
+      resetForm();
 
       return;
     }
@@ -53,7 +52,13 @@ export const ContactForm = () => {
   };
 
   return (
-    <Form className="flex flex-col gap-4" defaultValues={defaultValues} onSubmit={handleSubmit} zodSchema={formSchema}>
+    <Form
+      className="flex flex-col gap-4"
+      defaultValues={defaultContactValues}
+      onSubmit={handleSubmit}
+      validateOnChange={false}
+      zodSchema={formSchema}
+    >
       <Input type="text" name="name" placeholder={fieldsPlaceholders.name} />
       <Input type="text" name="email" placeholder={fieldsPlaceholders.email} />
       <Select label="Reasons" name="reason" options={options} defaultLabel={reasonSelectOptions.default} />

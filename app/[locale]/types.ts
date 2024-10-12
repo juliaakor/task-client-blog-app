@@ -10,3 +10,8 @@ export interface LayoutProps {
 export interface HomeProps {
   params: Locale;
 }
+
+export interface ErrorProps {
+  error: Error & { digest?: string };
+  reset: () => void;
+}

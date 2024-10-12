@@ -32,12 +32,14 @@
     "viewAllButtonTitle": "View All",
     "readMoreButtonTitle": "Read More",
     "aboutUsButtonTitle": "Discover our story",
-    "videoButtonTitle": "Video about us"
+    "videoButtonTitle": "Video about us",
+    "resetPageButtonTitle": "Try again"
   },
   "toasts": {
     "failedSubscribe": "Sorry, something happened with the mail service, try subscribing later",
     "successSubscribe": "You have successfully subscribed to our blog",
     "failedSendFeedback": "Sorry, we were unable to submit your feedback, please try again later",
     "successSendFeedback": "Your feedback has been successfully sent"
-  }
+  },
+  "pageError": "Something went wrong!"
 }

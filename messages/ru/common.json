@@ -32,12 +32,14 @@
     "viewAllButtonTitle": "Смотреть все",
     "readMoreButtonTitle": "Подробнее",
     "aboutUsButtonTitle": "Узнайте нашу историю",
-    "videoButtonTitle": "Видео о нас"
+    "videoButtonTitle": "Видео о нас",
+    "resetPageButtonTitle": "Попробовать ещё"
   },
   "toasts": {
     "failedSubscribe": "Извините, что-то случилось с почтовым сервисом, попробуйте подписаться позже",
     "successSubscribe": "Вы успешно подписались на наш блог",
     "failedSendFeedback": "Извините, мы не смогли отправить ваш отзыв, повторите попытку позже",
     "successSendFeedback": "Ваш отзыв успешно отправлен"
-  }
+  },
+  "pageError": "Что-то пошло не так!"
 }

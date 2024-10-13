@@ -1,3 +1,34 @@
 {
-  "title": "Home"
+  "title": "Home",
+  "featured": {
+    "title": "We are",
+    "subTitle": "Featured in"
+  },
+  "sectionTitles": {
+    "categories": "Choose A Catagory",
+    "authors": "List of Authors",
+    "featuredPost": "Featured Post",
+    "allPosts": "All Posts",
+    "allCatagories": "All Catagories",
+    "postedOn": "Posted on"
+  },
+  "aboutUsPreview": [
+    {
+      "sectionName": "About Us",
+      "title": "We are a community of content writers who share their learnings",
+      "secondaryInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "linkText": "Read More >"
+    },
+    {
+      "sectionName": "Our mision",
+      "subTitle": "Creating valuable content for creatives all around the world",
+      "secondaryInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ],
+  "reasonsSectionPreview": {
+    "sectionName": "Why we started",
+    "title": "It started out as a simple idea and evolved into our passion",
+    "secondaryInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "linkText": "Discover our story >"
+  }
 }

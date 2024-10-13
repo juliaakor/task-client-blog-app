@@ -23,7 +23,14 @@
   },
   "tags": {
     "title": "Все теги",
-    "values": ["Бизнес", "Опыт", "Экран", "Технологии", "Маркетинг", "Жизнь"]
+    "values": {
+      "business": "Бизнес",
+      "experience": "Опыт",
+      "screen": "Экран",
+      "technology": "Технологии",
+      "marketing": "Маркетинг",
+      "life": "Жизнь"
+    }
   },
   "search": {
     "placeholder": "Поиск по тегу...",
@@ -33,5 +40,14 @@
     "title": "Присоединяйтесь к нашей команде, чтобы стать частью нашей истории",
     "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "buttonText": "Присоединиться сейчас"
-  }
+  },
+  "postHeader": {
+    "dateFull": "Опубликовано {date}",
+    "dateShortAndAuthor": "{author}   |   {date} "
+  },
+  "authors": {
+    "intro": "Привет, меня зовут {name}, и добро пожаловать в мой блог.",
+    "postsHeader": "Мои посты"
+  },
+  "nextPostsHeader": "Что читать дальше"
 }

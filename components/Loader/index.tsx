@@ -1,9 +1,9 @@
 export const Loader = () => {
   return (
-    <div role="status" className="w-screen h-screen bg-white/10 m-0 p-0 top-0 absolute">
+    <div role="status" className="w-[80vw] h-[90vh] bg-white/10 m-auto p-0">
       <svg
         aria-hidden="true"
-        className="relative top-2/4 left-2/4 inline w-10 h-10 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+        className="relative top-2/4 left-2/4 inline w-10 h-10 text-gray-200 animate-spin dark:text-gray-600 fill-light-blue"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

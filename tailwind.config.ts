@@ -9,6 +9,12 @@ const config: Config = {
   plugins: [],
   theme: {
     extend: {
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-out forwards',
+      },
+      backgroundImage: {
+        'dark-shadow': 'radial-gradient(30.56% 76.04% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%)',
+      },
       colors: {
         background: 'var(--background)',
         'beige-01': 'var(--c-beige-01)',
@@ -24,6 +30,12 @@ const config: Config = {
         'white-03': 'var(--c-white-03)',
         yellow: 'var(--c-yellow)',
         'yellow-hover': 'var(--c-yellow-hover)',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
     },
     screens: {

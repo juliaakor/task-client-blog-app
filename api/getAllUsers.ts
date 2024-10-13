@@ -5,8 +5,8 @@ export interface GetUsersProps {
   limit: number;
 }
 
-export const getAllUsers = async ({ limit, page }: GetUsersProps): Promise<UsersResponse> => {
-  const response = await fetch(`/api/users?page=${page}&limit=${limit}`);
+export const getAllUsers = async ({ limit, page }: GetUsersProps, baseUrl?: string): Promise<UsersResponse> => {
+  const response = await fetch(`${baseUrl || ''}/api/users?page=${page}&limit=${limit}`);
 
   if (!response.ok) {
     throw new Error(`Error fetching users: ${response.statusText}`);

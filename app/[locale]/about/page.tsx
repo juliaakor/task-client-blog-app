@@ -1,10 +1,18 @@
-/* eslint-disable camelcase */
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { AboutUsSection } from '@components/AboutUsSection';
+import { AuthorList } from '@components/AuthorList';
+import { JoinSection } from '@components/JoinSection';
+import { PageContent } from '@lib/components/PageContent';
 
-import { HomeProps } from '@app/[locale]/types';
-
-export default function About({ params: { locale } }: HomeProps) {
-  unstable_setRequestLocale(locale);
-
-  return <main>About</main>;
+export default function About() {
+  return (
+    <PageContent>
+      <AboutUsSection />
+      <div>
+        <AuthorList limit={8} />
+      </div>
+      <div className="w-1/3 max-768:w-3/5 max-425:4/5 m-auto">
+        <JoinSection />
+      </div>
+    </PageContent>
+  );
 }

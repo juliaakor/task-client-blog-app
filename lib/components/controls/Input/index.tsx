@@ -7,7 +7,7 @@ import { ErrorMessage } from '@/lib/components/ErrorMessage';
 
 import { InputProps } from './types';
 
-export const Input = ({ className, label, name, type, ...props }: InputProps) => {
+export const Input = ({ className, inputClassName, label, name, type, ...props }: InputProps) => {
   const [field, meta] = useField(name);
   const inputId = name + useId();
 
@@ -15,7 +15,7 @@ export const Input = ({ className, label, name, type, ...props }: InputProps) =>
     <div className={clsx('', className)}>
       <ErrorMessage isError={meta.touched && !!meta.error} errorText={meta.error} />
       <input
-        className={clsx(defaultControlStyle, 'py-4 pl-6')}
+        className={clsx(defaultControlStyle, inputClassName, 'py-4 pl-6')}
         aria-label={label}
         id={inputId}
         type={type}

@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-import { Typography } from '@/lib/components/Typography';
+import { Typography } from '@lib/components/Typography';
 
 import { ContactInfoTranslationProps } from './types';
 
@@ -16,10 +16,10 @@ export const ContactInfo = () => {
             <Typography tag="body2" className="border-b pb-4 text-white-01 opacity-60">
               {title}
             </Typography>
-            <Typography tag="h5" className="text-white-01 pt-4 whitespace-pre">
+            <Typography tag="h5" className="text-white-01 pt-4 whitespace-pre text-wrap">
               {mainInfo}
             </Typography>
-            <Typography tag="body1" className="text-white-01 opacity-60">
+            <Typography tag="body1" className="text-white-01 opacity-60 text-wrap">
               {additionalInfo}
             </Typography>
           </div>

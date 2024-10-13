@@ -11,5 +11,5 @@ export interface SocialsProps {
   isIncluded: AvailableSocialsUnion[];
   className?: string;
   iconStyle?: string;
-  links?: Record<AvailableSocialsUnion, string>;
+  links?: Partial<Record<AvailableSocialsUnion, string>>;
 }

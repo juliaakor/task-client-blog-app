@@ -1,5 +1,6 @@
 'use client';
 
+import { FormikHelpers } from 'formik';
 import { useTranslations } from 'next-intl';
 import { z } from 'zod';
 
@@ -10,9 +11,7 @@ import { ButtonType } from '@lib/components/Button/types';
 import { Input } from '@lib/components/controls/Input';
 import { Form } from '@lib/components/Form';
 
-const defaultValues = {
-  email: '',
-};
+import { DefaultSubscribtionValues, defaultSubscribtionValues } from './types';
 
 export const SubscribtionForm = () => {
   const t = useTranslations('common');
@@ -26,9 +25,13 @@ export const SubscribtionForm = () => {
     email: z.string({ required_error: subscriptionFormValidation.required }).email(subscriptionFormValidation.email),
   });
 
-  const handleSubmit = async ({ email }: typeof defaultValues) => {
+  const handleSubmit = async (
+    { email }: DefaultSubscribtionValues,
+    { resetForm }: FormikHelpers<DefaultSubscribtionValues>
+  ) => {
     if (await sendSubscriptionEmail({ email })) {
       successSendToast(successSubscribe);
+      resetForm();
 
       return;
     }
@@ -37,10 +40,21 @@ export const SubscribtionForm = () => {
   };
 
   return (
-    <Form className="flex gap-6" defaultValues={defaultValues} onSubmit={handleSubmit} zodSchema={formSchema}>
-      <Input className="w-full" type="text" name="email" placeholder={subscriptionFormInfo.placeholder} />
+    <Form
+      className="flex gap-6 max-425:flex-col"
+      defaultValues={defaultSubscribtionValues}
+      onSubmit={handleSubmit}
+      zodSchema={formSchema}
+    >
+      <Input
+        className="w-full"
+        inputClassName="text-white-01 placeholder-light-gray"
+        type="text"
+        name="email"
+        placeholder={subscriptionFormInfo.placeholder}
+      />
       <Button
-        className="text-lg leading-8 max-w-44"
+        className="text-lg leading-8 max-w-44 max-425:w-full"
         styleType={ButtonType.Brand}
         label={subscriptionFormInfo.submitButtonText}
         name="submit"

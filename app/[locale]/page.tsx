@@ -1,16 +1,12 @@
-/* eslint-disable camelcase */
-import { useTranslations } from 'next-intl';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { HomePageContent } from '@components/HomePageContent';
+import { PageContent } from '@lib/components/PageContent';
 
-import { HomeProps } from './types';
-
-export default function Home({ params }: HomeProps) {
-  unstable_setRequestLocale(params.locale);
-  const t = useTranslations('home');
-
+export default async function Home() {
   return (
     <main>
-      {t('title')} {params.locale}
+      <PageContent>
+        <HomePageContent />
+      </PageContent>
     </main>
   );
 }

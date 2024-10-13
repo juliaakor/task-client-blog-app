@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 
 import { routing } from '@/i18n';
-import { getRedirectUrlForLocales } from '@lib/routing/getRedirectUrlForLocales';
+// import { getRedirectUrlForLocales } from '@lib/routing/getRedirectUrlForLocales';
 
 const handleI18nRouting = createMiddleware(routing);
 
@@ -15,10 +15,12 @@ export default function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  /*
   const redirectedUrl = getRedirectUrlForLocales(pathname, request);
   if (redirectedUrl) {
     return NextResponse.redirect(new URL(redirectedUrl, request.url));
   }
+  */
 
   return handleI18nRouting(request);
 }

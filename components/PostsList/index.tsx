@@ -3,13 +3,21 @@ import { getTranslations } from 'next-intl/server';
 
 import { Link } from '@/i18n';
 import { Typography } from '@/lib/components/Typography';
+import { dateToString } from '@/lib/format/dateToString';
 import { ROUTES } from '@constants/navigation';
 import { PostCard } from '@lib/components/cards/PostCard';
 
 import { PostsListProps } from './types';
 
-export const PostsList = async ({ posts = [] }: PostsListProps) => {
-  const t = await getTranslations('blog.categories.values');
+export const PostsList = async ({
+  className,
+  dateType = 'short',
+  imageClassName,
+  locale,
+  posts = [],
+}: PostsListProps) => {
+  const t = await getTranslations('blog');
+  const categories = t.raw('categories.values');
 
   if (posts?.length === 0)
     return (
@@ -20,18 +28,25 @@ export const PostsList = async ({ posts = [] }: PostsListProps) => {
 
   return (
     <>
-      {posts.map(({ category, id, image, name, preview, userId }) => (
-        <Link key={id} href={ROUTES.post.replace('[id]', userId).replace('[postId]', id)}>
-          <PostCard
-            type="medium"
-            imageClassName="w-[26rem] min-w-[26rem] items-stretch h-auto max-768:min-w-[15rem] max-768:w-[15rem]"
-            preview={preview}
-            title={name}
-            category={t(`${category}.title`)}
-            image={image as StaticImageData}
-          />
-        </Link>
-      ))}
+      {posts.map(({ category, createdAt, id, image, name, preview, user, userId }) => {
+        return (
+          <Link key={id} href={ROUTES.post.replace('[id]', userId).replace('[postId]', id)}>
+            <PostCard
+              type="medium"
+              className={className}
+              imageClassName={imageClassName}
+              preview={preview}
+              title={name}
+              label={t('postHeader.dateShortAndAuthor', {
+                author: user?.name,
+                date: dateToString(createdAt || '', dateType, locale as 'ru' | 'en'),
+              })}
+              category={categories[`${category}.title`]}
+              image={image as StaticImageData}
+            />
+          </Link>
+        );
+      })}
     </>
   );
 };

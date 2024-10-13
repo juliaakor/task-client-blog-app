@@ -48,5 +48,6 @@
   "authors": {
     "intro": "Hey there, I’m {name} and welcome to my Blog",
     "postsHeader": "My Posts"
-  }
+  },
+  "nextPostsHeader": "What to read next"
 }

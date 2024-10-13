@@ -21,7 +21,7 @@ export default async function Author({ params }: AuthorProps) {
       <div className="bg-white-03">
         <div className="m-auto w-3/4 max-768:w-11/12">
           <div className=" py-32 w-5/6 flex gap-8 max-768:w-full max-768:justify-between">
-            <Image className="w-64 h-72 object-contain" src={avatar || ''} alt={name} />
+            <Image className="w-64 h-72 object-contain" src={avatar || ''} alt={name} width={48} height={48} />
             <div>
               <Typography tag="h1" className="mb-6">
                 {t('authors.intro', { name })}
@@ -47,7 +47,10 @@ export default async function Author({ params }: AuthorProps) {
           {t('authors.postsHeader')}
         </Typography>
         <div className="mt-6 flex flex-col gap-8">
-          <PostsList posts={posts} />
+          <PostsList
+            posts={posts}
+            imageClassName="w-[26rem] min-w-[26rem] items-stretch h-auto max-768:min-w-[15rem] max-768:w-[15rem]"
+          />
         </div>
       </div>
     </main>

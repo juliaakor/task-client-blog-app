@@ -44,5 +44,9 @@
   "postHeader": {
     "dateFull": "Опубликовано {date}",
     "dateShortAndAuthor": "{author}   |   {date} "
+  },
+  "authors": {
+    "intro": "Привет, меня зовут {name}, и добро пожаловать в мой блог.",
+    "postsHeader": "Мои посты"
   }
 }

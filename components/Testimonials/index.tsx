@@ -57,7 +57,7 @@ export const Testimonials = () => {
 
   return (
     <>
-      <div className="pr-20 mr-24 border-r border-light-gray max-768:(pr-0 pb-20 mr-0 mb-24) max-768:border-r-0">
+      <div className="pr-20 mr-24 border-r border-light-gray max-768:pr-0 max-768:pb-20 max-768:mr-0 max-768:mb-24) max-768:border-r-0">
         <Typography className="mb-3" tag="cap1">
           {t('sectionName')}
         </Typography>
@@ -66,7 +66,7 @@ export const Testimonials = () => {
         </Typography>
         <Typography tag="body1">{t('info')}</Typography>
       </div>
-      <div className="relative max-w-xl w-full overflow-hidden max-768:(w-8/12 pt-20 border-t border-light-gray)">
+      <div className="relative max-w-xl w-full overflow-hidden max-768:w-8/12 max-768:pt-20 max-768:border-t max-768:border-light-gray">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * SLIDE_CARD_OFFSET}%)` }}

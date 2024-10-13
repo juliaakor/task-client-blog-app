@@ -21,13 +21,15 @@ export const Footer = () => {
 
   return (
     <footer className="bg-dark-blue px-20 py-14 flex flex-col gap-12">
-      <div className="flex justify-between">
+      <div className="flex justify-between gap-6 flex-wrap">
         <Logo />
-        <Navbar isFullView />
+        <Navbar className="max-425:flex-col" isFullView />
       </div>
-      <div className="flex justify-between bg-white/5 py-20 px-16">
-        <h5 className="text-white-01 text-4xl font-bold leading-10 w-2/4">{lettersSectionInfo.title}</h5>
-        <div className="w-[45%]">
+      <div className="flex gap-6 justify-between bg-white/5 py-20 px-16 max-768:flex-col">
+        <h5 className="text-white-01 text-4xl font-bold leading-10 w-2/4 max-768:w-3/4 max-425:w-full">
+          {lettersSectionInfo.title}
+        </h5>
+        <div className="w-[45%] max-1024:w-3/5 max-768:w-4/5 max-425:w-full">
           <SubscribtionForm />
         </div>
       </div>

@@ -18,7 +18,7 @@ export const Header = () => {
       <Logo />
       <div className="flex items-center gap-8">
         <Navbar />
-        <div className="w-56">
+        <div className="w-56 max-768:hidden">
           <Button
             styleType="white"
             label={t.raw('buttons').videoButtonTitle}

@@ -6,6 +6,10 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ru'],
+  },
   images: {
     domains: ['s3-alpha-sig.figma.com'],
   },

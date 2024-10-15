@@ -15,6 +15,7 @@ export const AllPostsWithPagination = () => {
   const categoriesTranslations = useTranslations('blog.categories.values');
   const homeTranslations = useTranslations('home');
   const buttonsTranslations = useTranslations('common.buttons');
+  const commonTranslations = useTranslations('common');
 
   const [currentPage, setCurrentPage] = useState(1);
   const { data, isLoading } = useGetPosts({ limit: 5, page: currentPage });
@@ -35,7 +36,7 @@ export const AllPostsWithPagination = () => {
     handlePrevClick,
   })();
 
-  if (isLoading) return <Typography tag="h5">Loading...</Typography>;
+  if (isLoading) return <Typography tag="h5">{commonTranslations('pageLoading')}</Typography>;
 
   return (
     <div>
@@ -58,10 +59,10 @@ export const AllPostsWithPagination = () => {
             </Link>
           ))
         ) : (
-          <Typography tag="h5">No posts</Typography>
+          <Typography tag="h5">{commonTranslations('noPosts')}</Typography>
         )}
       </div>
-      <div className="w-1/4 m-auto mt-16 max-768:w-3/4 text-center">
+      <div className="flex gap-6 m-auto mt-16 w-max text-center">
         {paginationButtons.map(({ disabled, name, onClick, text }) => (
           <button
             type="button"

@@ -1,6 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 
 import { getPostById } from '@/api/getPostById';
+import { ROUTES } from '@/constants/navigation';
+import { Link } from '@/i18n';
 import { Typography } from '@/lib/components/Typography';
 import { getAllPosts } from '@api/getAllPosts';
 import { getUserById } from '@api/getUserById';
@@ -32,25 +34,29 @@ export const PostsPreview = async () => {
   );
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 max-768:grid-cols-1 max-768:gap-12">
       <div>
         <Typography className="mb-8" tag="h2">
           {homeTranslations('featuredPost')}
         </Typography>
-        <div className="border border-white-03 p-8">
+        <div className="border border-white-03 p-8 max-425:[&_button]:w-min">
           <FeaturedPost
             post={{ ...featuredPost, user: featuredPostUser }}
             isSubTitleSection
             className="flex-col-reverse w-full [&_div]:w-full p-0 [&_button]:w-1/3"
-            imageClassName="w-full min-w-[29rem] float-top"
+            imageClassName="min-w-full h-[10rem] object-cover float-top"
             buttonLinkTitle={commonTranslations.raw('buttons.readMoreButtonTitle')}
           />
         </div>
       </div>
       <div>
-        <div className="flex justify-between mb-8 px-8">
+        <div className="flex justify-between items-end mb-8 px-8">
           <Typography tag="h2">{homeTranslations('allPosts')}</Typography>
-          <Typography tag="body1">{commonTranslations('buttons.viewAllButtonTitle')}</Typography>
+          <Link href={ROUTES.blog}>
+            <Typography className="filter hover:brightness-200" tag="body1">
+              {commonTranslations('buttons.viewAllButtonTitle')}
+            </Typography>
+          </Link>
         </div>
         <div className="px-8 flex flex-col items-stretch aspect-auto">
           {postsWithUser.map(({ createdAt, id, name, user }) => (

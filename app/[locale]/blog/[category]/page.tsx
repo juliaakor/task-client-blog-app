@@ -41,6 +41,7 @@ export default function Category({ params }: CategoryProps) {
   }
 
   const t = useTranslations('blog');
+  const commonTranslations = useTranslations('common');
   const categories = t.raw('categories');
   const tags = t.raw('tags');
   const categoryInfo = t.raw(`categories.values.${category}`);
@@ -96,7 +97,7 @@ export default function Category({ params }: CategoryProps) {
         <div className="mt-6 flex flex-col gap-8 max-768:gap-4 w-4/6">
           {isLoading && (
             <Typography className="text-center" tag="h3">
-              Loading...
+              {commonTranslations('pageLoading')}
             </Typography>
           )}
 
@@ -114,7 +115,7 @@ export default function Category({ params }: CategoryProps) {
                   />
                 </Link>
               ))
-            : isLoading || <Typography tag="h3">No posts</Typography>}
+            : isLoading || <Typography tag="h3">{commonTranslations('noPosts')}</Typography>}
         </div>
         <div className="w-[18rem]">
           <div className="mb-14">
@@ -126,7 +127,7 @@ export default function Category({ params }: CategoryProps) {
               validateOnBlur={false}
               validateOnChange={false}
             >
-              <Input type="text" name="search" placeholder="Search for tag..." />
+              <Input type="text" name="search" placeholder={t('search.placeholder')} />
               <Button
                 className="py-4 px-2 w-max max-425:w-full"
                 styleType="brand"

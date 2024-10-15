@@ -17,12 +17,14 @@ export const PostsList = async ({
   posts = [],
 }: PostsListProps) => {
   const t = await getTranslations('blog');
+  const commonTranslations = await getTranslations('common');
+
   const categories = t.raw('categories.values');
 
   if (posts?.length === 0)
     return (
       <Typography className="m-8 text-center" tag="h3">
-        No posts
+        {commonTranslations('noPosts')}
       </Typography>
     );
 

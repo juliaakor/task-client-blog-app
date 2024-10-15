@@ -10,7 +10,9 @@ import { ENV } from '@constants/env';
 import { PageContent } from '@lib/components/PageContent';
 import { Typography } from '@lib/components/Typography';
 
-export default async function Blog() {
+import { LayoutProps } from '../types';
+
+export default async function Blog({ params }: LayoutProps) {
   const t = await getTranslations('home');
   const commonTranslations = await getTranslations('common');
 
@@ -21,6 +23,7 @@ export default async function Blog() {
     <>
       <FeaturedPost
         post={{ ...post, user }}
+        locale={params.locale}
         className="bg-white-03 py-20 px-20"
         buttonLinkTitle={commonTranslations('buttons.readMoreButtonTitle')}
       />

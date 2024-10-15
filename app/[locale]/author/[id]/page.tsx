@@ -13,7 +13,9 @@ import { AuthorProps } from './types';
 export default async function Author({ params }: AuthorProps) {
   const t = await getTranslations('blog');
 
-  const { about, avatar, id: userId, name, socials } = await getUserById(params.id, ENV.NEXT_PUBLIC_BASE_URL);
+  const user = await getUserById(params.id, ENV.NEXT_PUBLIC_BASE_URL);
+  const { about, avatar, id: userId, name, socials } = user;
+
   const { posts } = await getPostsByUserId({ limit: 2, page: 1, userId }, ENV.NEXT_PUBLIC_BASE_URL);
 
   return (
@@ -48,7 +50,7 @@ export default async function Author({ params }: AuthorProps) {
         </Typography>
         <div className="mt-6 flex flex-col gap-8">
           <PostsList
-            posts={posts}
+            posts={posts.map((post) => ({ ...post, user }))}
             imageClassName="w-[26rem] min-w-[26rem] items-stretch h-auto max-768:min-w-[15rem] max-768:w-[15rem]"
           />
         </div>

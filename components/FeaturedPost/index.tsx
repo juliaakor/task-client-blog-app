@@ -1,31 +1,45 @@
-import clsx from 'clsx';
-import { StaticImageData } from 'next/image';
-import { getTranslations } from 'next-intl/server';
+'use client';
 
+import { StaticImageData } from 'next/image';
+import { useTranslations } from 'next-intl';
+
+import { ROUTES } from '@/constants/navigation';
+import { useRouter } from '@/i18n';
 import { PostCard } from '@lib/components/cards/PostCard';
 import { dateToString } from '@lib/format/dateToString';
 
 import { FeaturedPostProps } from './types';
 
-export const FeaturedPost = async ({
+export const FeaturedPost = ({
   buttonLinkTitle,
   className,
   dateType,
+  hasSubTitleName,
   imageClassName,
+  isSubTitleSection,
   locale,
-  post,
+  post: { category, createdAt, id, image, name, preview, user, userId },
 }: FeaturedPostProps) => {
-  const t = await getTranslations('blog');
-  const categories = t.raw('categories.values');
+  const t = useTranslations('blog');
+  const router = useRouter();
 
-  const { category, createdAt, image, name, preview, user } = post;
   const label = t('postHeader.dateShortAndAuthor', {
     author: user?.name,
     date: dateToString(createdAt || '', dateType, locale as 'ru' | 'en'),
   });
 
+  const categoryLabel = t(`categories.values.${category}.title`);
+
+  const handleOnButtonClick = () => {
+    router.push(ROUTES.post.replace('[id]', userId).replace('[postId]', id));
+  };
+
+  const subTitle = isSubTitleSection
+    ? `${t('featuredSubTitles.category')} ${categoryLabel}`
+    : t('featuredSubTitles.post');
+
   return (
-    <div className={clsx(className, 'py-20 px-20')}>
+    <div className={className}>
       <PostCard
         type="large"
         className={className}
@@ -33,10 +47,11 @@ export const FeaturedPost = async ({
         preview={preview}
         title={name}
         label={label}
-        category={categories[`${category}.title`]}
+        category={!isSubTitleSection ? categoryLabel : ''}
         image={image as StaticImageData}
-        subTitle="Featured"
+        subTitle={hasSubTitleName ? subTitle : ''}
         buttonLinkTitle={buttonLinkTitle}
+        onClickButtonClick={handleOnButtonClick}
       />
     </div>
   );

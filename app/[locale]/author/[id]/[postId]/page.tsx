@@ -84,7 +84,7 @@ export default async function Post({ params }: PostProps) {
             {cateroryLabel}
           </Typography>
         </div>
-        <Image className="w-full" src={image} alt="Blog image" />
+        <Image className="w-full max-h-[100vh] object-cover" src={image} alt="Blog image" />
         <div className="w-1/2 flex flex-col gap-12 max-768:w-3/4">{parsedPost}</div>
         <div>
           <Typography className="mb-16" tag="h2">
@@ -93,7 +93,7 @@ export default async function Post({ params }: PostProps) {
           <div className="flex gap-16 flex-wrap">
             <PostsList
               className="flex-col"
-              imageClassName="w-[29rem] min-w-[29rem] items-stretch w-auto"
+              imageClassName="w-1/3 max-w-1/3 max-768:w-[29rem] max-768:min-w-[29rem] items-stretch max-425:w-auto"
               posts={posts.map((post) => ({ ...post, user }))}
               locale={params.locale}
             />

@@ -30,7 +30,7 @@ export const PostCardLarge = ({
     <div className={clsx('flex gap-8 justify-between max-768:flex-col-reverse max-768:items-center', className)}>
       <div className="flex flex-col self-center gap-4 w-3/5 max-768:4/5 max-425:w-full">
         {postInfo.map(({ className, tag, value }) => (
-          <Typography key={tag} className={clsx('text-inherit', className)} tag={tag as TypographyTags}>
+          <Typography key={tag} className={clsx(className, 'text-inherit')} tag={tag as TypographyTags}>
             {value}
           </Typography>
         ))}

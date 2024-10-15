@@ -23,15 +23,15 @@ export const CategoryList = ({ cardClassName, className, isFullInfo = false }: C
 
   return (
     <div className={clsx('flex', isFullInfo ? 'gap-8 flex-wrap justify-center' : 'flex-col gap-6', className)}>
-      {categories.map(({ icon, info, label, name }) =>
-        isFullInfo ? (
-          <Link key={name} href={ROUTES.blogCategory.replace('[category]', name)}>
+      {categories.map(({ icon, info, label, name }) => (
+        <Link key={name} href={ROUTES.blogCategory.replace('[category]', name)}>
+          {isFullInfo ? (
             <CategoryCardMedium label={label} name={name} icon={icon} info={info} className={cardClassName} />
-          </Link>
-        ) : (
-          <CategoryCardSmall key={name} label={label} name={name} icon={icon} className={cardClassName} />
-        )
-      )}
+          ) : (
+            <CategoryCardSmall key={name} label={label} name={name} icon={icon} className={cardClassName} />
+          )}
+        </Link>
+      ))}
     </div>
   );
 };

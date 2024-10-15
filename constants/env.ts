@@ -7,5 +7,5 @@ export const ENV = {
   NEXT_PUBLIC_BASE_URL:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
-      : process.env.VERCEL_URL || `https://${process.env.VERCEL_URL}`,
+      : process.env.VERCEL_URL || `https://${process.env.VERCEL_BRANCH_URL}` || `https://${process.env.VERCEL_URL}`,
 };

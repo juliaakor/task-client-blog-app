@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 
+import { filterPosts } from '@/api/filterPosts';
 import { createErrorResponse } from '@api/createErrorResponse';
 import { NOT_FOUND_ERROR_STATUS_CODE } from '@constants/api';
 import posts from '@lib/mocks/posts';
@@ -19,7 +20,7 @@ export async function GET(request: Request, { params }: GETUserByIdApiProps) {
 
   if (!user) return createErrorResponse('User not found', NOT_FOUND_ERROR_STATUS_CODE);
 
-  const userPosts = posts.filter((post) => post.userId === userId);
+  const userPosts = filterPosts(posts, { userId });
 
   return NextResponse.json({
     ...user,

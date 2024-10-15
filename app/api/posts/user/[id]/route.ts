@@ -25,9 +25,7 @@ export async function GET(request: Request, { params }: GETUserPostsByIdApiProps
   const category = searchParams.get('category');
   const tagsParam = searchParams.get('tags');
 
-  let userPosts = posts.filter((post) => post.userId === userId);
-
-  userPosts = filterPosts(userPosts, { category, tags: tagsParam });
+  const userPosts = filterPosts(posts, { category, tags: tagsParam, userId });
 
   if (!userPosts.length) return createErrorResponse('No posts found for this user', NOT_FOUND_ERROR_STATUS_CODE);
 

@@ -1,5 +1,3 @@
-import { NextResponse } from 'next/server';
-
 import { getPaginationParams } from '@api/getPaginationParams';
 import { paginateData } from '@api/paginateData';
 import { USERS_LIMIT_DEFAULT } from '@constants/api';
@@ -11,7 +9,7 @@ export async function GET(request: Request) {
 
   const paginatedUsers = paginateData(users, page, limit);
 
-  return NextResponse.json({
+  return Response.json({
     page,
     total: users.length,
     users: paginatedUsers,

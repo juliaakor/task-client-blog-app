@@ -1,5 +1,3 @@
-import { NextResponse } from 'next/server';
-
 import { filterPosts } from '@api/filterPosts';
 import { getPaginationParams } from '@api/getPaginationParams';
 import { paginateData } from '@api/paginateData';
@@ -16,7 +14,7 @@ export async function GET(request: Request) {
   const filteredPosts = filterPosts(posts, { category, tags: tagsParam });
   const paginatedPosts = paginateData(filteredPosts, page, limit);
 
-  return NextResponse.json({
+  return Response.json({
     page,
     posts: paginatedPosts,
     total: filteredPosts.length,

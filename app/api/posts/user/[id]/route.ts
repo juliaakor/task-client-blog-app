@@ -1,5 +1,3 @@
-import { NextResponse } from 'next/server';
-
 import { createErrorResponse } from '@api/createErrorResponse';
 import { filterPosts } from '@api/filterPosts';
 import { getPaginationParams } from '@api/getPaginationParams';
@@ -31,7 +29,7 @@ export async function GET(request: Request, { params }: GETUserPostsByIdApiProps
 
   const paginatedPosts = paginateData(userPosts, page, limit);
 
-  return NextResponse.json({
+  return Response.json({
     page,
     posts: paginatedPosts,
     total: userPosts.length,

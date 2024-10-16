@@ -41,7 +41,7 @@ describe('getUserById', () => {
 
     const user = await getUserById('f47ac10b-58cc-4372-a567-0e02b2c3d479');
 
-    expect(fetch).toHaveBeenCalledWith('/api/users/f47ac10b-58cc-4372-a567-0e02b2c3d479');
+    expect(fetch).toHaveBeenCalledWith('/api/user/f47ac10b-58cc-4372-a567-0e02b2c3d479');
     expect(UserSchema.parse).toHaveBeenCalledWith(mockUser);
     expect(user).toEqual(mockUser);
   });

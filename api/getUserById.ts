@@ -1,7 +1,7 @@
 import { UserSchema } from 'lib/zod/user';
 
 export const getUserById = async (id: string, baseUrl?: string) => {
-  const response = await fetch(`${baseUrl || ''}/api/users/${id}`);
+  const response = await fetch(`${baseUrl || ''}/api/user/${id}`);
 
   if (!response.ok) {
     throw new Error(`Error fetching user with ID ${id}: ${response.statusText}`);

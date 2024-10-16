@@ -4,7 +4,7 @@ import createMiddleware from 'next-intl/middleware';
 import { routing } from '@/i18n';
 
 export default function middleware(request: NextRequest) {
-  const handleI18nRouting = createMiddleware({ ...routing, localeDetection: false });
+  const handleI18nRouting = createMiddleware({ ...routing });
 
   return handleI18nRouting(request);
 }

@@ -27,7 +27,6 @@ const config: Config = {
     },
   },
   moduleNameMapper: {
-    '^@api/(.*)$': '<rootDir>/api/$1',
     '^@hooks/(.*)$': '<rootDir>/hooks/$1',
     '^@lib/(.*)$': '<rootDir>/lib/$1',
   },

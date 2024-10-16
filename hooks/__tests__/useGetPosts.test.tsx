@@ -5,7 +5,7 @@ import { getAllPosts } from '@/lib/api/getAllPosts';
 import { GetPostsProps } from '@/lib/api/postUtils';
 import { useGetPosts } from '@hooks/usePosts';
 
-jest.mock('@api/getAllPosts');
+jest.mock('@lib/api/getAllPosts');
 
 const queryClient = new QueryClient();
 

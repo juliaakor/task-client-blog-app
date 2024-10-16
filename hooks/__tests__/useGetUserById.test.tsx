@@ -5,7 +5,7 @@ import { getUserById } from '@/lib/api/getUserById';
 import { useGetUserById } from '@hooks/useUsers';
 import { User } from '@lib/zod/user';
 
-jest.mock('@api/getUserById');
+jest.mock('@lib/api/getUserById');
 
 const queryClient = new QueryClient();
 

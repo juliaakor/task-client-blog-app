@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     domains: ['s3-alpha-sig.figma.com'],
   },
+  trailingSlash: true,
 };
 
 export default withNextIntl(nextConfig);

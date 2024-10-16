@@ -9,9 +9,9 @@ import { PostsPreview } from '@components/PostsPreview';
 import { ENV } from '@constants/env';
 import { PageContent } from '@lib/components/PageContent';
 
-import { LayoutProps } from './types';
+import { HomePageProps } from './types';
 
-export default async function Home({ params }: LayoutProps) {
+export default async function Home({ params }: HomePageProps) {
   const t = await getTranslations('common');
 
   const headerPost = await getPostById(process.env.HEADER_POST_ID_HOME_PAGE as string, ENV.NEXT_PUBLIC_BASE_URL);

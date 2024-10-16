@@ -1,0 +1,57 @@
+{
+  "pageTitle": "Блог",
+  "categories": {
+    "title": "Категории",
+    "values": {
+      "startup": {
+        "title": "Стартап",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      },
+      "business": {
+        "title": "Бизнес",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      },
+      "economy": {
+        "title": "Экономика",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      },
+      "technology": {
+        "title": "Технологии",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      }
+    }
+  },
+  "tags": {
+    "title": "Все теги",
+    "values": {
+      "business": "Бизнес",
+      "experience": "Опыт",
+      "screen": "Экран",
+      "technology": "Технологии",
+      "marketing": "Маркетинг",
+      "life": "Жизнь"
+    }
+  },
+  "search": {
+    "placeholder": "Поиск по тегу...",
+    "submitButtonText": "Поиск"
+  },
+  "joinSection": {
+    "title": "Присоединяйтесь к нашей команде, чтобы стать частью нашей истории",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "buttonText": "Присоединиться сейчас"
+  },
+  "postHeader": {
+    "dateFull": "Опубликовано {date}",
+    "dateShortAndAuthor": "{author}   |   {date} "
+  },
+  "authors": {
+    "intro": "Привет, меня зовут {name}, и добро пожаловать в мой блог.",
+    "postsHeader": "Мои посты"
+  },
+  "nextPostsHeader": "Что читать дальше",
+  "featuredSubTitles": {
+    "category": "Опубликовано в",
+    "post": "Избранное"
+  }
+}

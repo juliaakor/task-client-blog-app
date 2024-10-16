@@ -1,0 +1,50 @@
+{
+  "pageTitle": "Свяжитесь с нами",
+  "pageSlogan": "Давайте начнем разговор",
+  "pageInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+  "contactInfo": [
+    {
+      "additionalInfo": "Наша служба поддержки работает круглосуточно и без выходных",
+      "mainInfo": "С понедельника по пятницу\n9:00 утра до 8:00 вечера",
+      "title": "Время работы"
+    },
+    { "additionalInfo": "hello@finsweet.com", "mainInfo": "020 7993 2905", "title": "Свяжитесь с нами" }
+  ],
+  "form": {
+    "fieldsPlaceholders": {
+      "name": "Полное имя",
+      "email": "Ваш e-mail",
+      "message": "Сообщение",
+      "reason": []
+    },
+    "validationMessages": {
+      "required": "Поле обязательно",
+      "moreThan": "Должно быть больше, чем",
+      "email": "Email не действителен"
+    },
+    "submitButtonTitle": "Отправить сообщение",
+    "reasonSelectOptions": {
+      "support": "Поддержка",
+      "sales": "Продажи",
+      "feedback": "Отзывы",
+      "default": "Выберите причину"
+    }
+  },
+  "offices": {
+    "rome": {
+      "address": "Площадь Венеции, Рим",
+      "country": "Италия",
+      "name": "Офис в Риме"
+    },
+    "canada": {
+      "address": "Холм Парламента, Оттава",
+      "country": "Канада",
+      "name": "Офис в Оттаве"
+    },
+    "portugal": {
+      "address": "П Praça do Comércio, Лиссабон",
+      "country": "Португалия",
+      "name": "Офис в Лиссабоне"
+    }
+  }
+}

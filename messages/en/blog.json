@@ -1,0 +1,57 @@
+{
+  "pageTitle": "Blog",
+  "categories": {
+    "title": "Categories",
+    "values": {
+      "startup": {
+        "title": "Startup",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      },
+      "business": {
+        "title": "Business",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      },
+      "economy": {
+        "title": "Economy",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      },
+      "technology": {
+        "title": "Technology",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+      }
+    }
+  },
+  "tags": {
+    "title": "All Tags",
+    "values": {
+      "business": "Business",
+      "experience": "Experience",
+      "screen": "Screen",
+      "technology": "Technology",
+      "marketing": "Marketing",
+      "life": "Life"
+    }
+  },
+  "search": {
+    "placeholder": "Search for tag...",
+    "submitButtonText": "Search"
+  },
+  "joinSection": {
+    "title": "Join our team to be a part of our story",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "buttonText": "Join Now"
+  },
+  "postHeader": {
+    "dateFull": "Posted on {date}",
+    "dateShortAndAuthor": "By {author}   |   {date} "
+  },
+  "authors": {
+    "intro": "Hey there, I’m {name} and welcome to my Blog",
+    "postsHeader": "My Posts"
+  },
+  "nextPostsHeader": "What to read next",
+  "featuredSubTitles": {
+    "category": "Posted on",
+    "post": "Featured Post"
+  }
+}

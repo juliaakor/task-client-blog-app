@@ -1,3 +1,34 @@
 {
-  "title": "Домашняя страница"
+  "title": "Домашняя страница",
+  "featured": {
+    "title": "О нас",
+    "subTitle": "Рассказывают"
+  },
+  "sectionTitles": {
+    "categories": "Выберите категорию",
+    "authors": "Список авторов",
+    "featuredPost": "Подборка статей",
+    "allPosts": "Все посты",
+    "allCatagories": "Все категории",
+    "postedOn": "В категории"
+  },
+  "aboutUsPreview": [
+    {
+      "sectionName": "О нас",
+      "title": "Мы - сообщество авторов контента, которые делятся своими наработками",
+      "secondaryInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "linkText": "Подробнее >"
+    },
+    {
+      "sectionName": "Наша миссия",
+      "subTitle": "Создание ценного контента для творческих людей по всему миру",
+      "secondaryInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ],
+  "reasonsSectionPreview": {
+    "sectionName": "Почему мы начали",
+    "title": "Все началось с простой идеи и превратилось в нашу страсть.",
+    "secondaryInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "linkText": "Узнайте нашу историю >"
+  }
 }

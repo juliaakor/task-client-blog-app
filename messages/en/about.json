@@ -1,0 +1,33 @@
+{
+  "title": "About",
+  "subTitle": "About Us",
+  "slogan": "We are a team of content writers who share their learnings",
+  "pageInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "infoBlocks": {
+    "mission": {
+      "sectionName": "Our mision",
+      "subTitle": "Creating valuable content for creatives all around the world",
+      "mainInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+    },
+    "vision": {
+      "sectionName": "Our Vision",
+      "subTitle": "A platform that empowers individuals to improve",
+      "mainInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+    },
+    "team": {
+      "title": "Our team of creatives",
+      "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "mainInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    },
+    "reasons": {
+      "title": "Why we started this Blog",
+      "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "mainInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    }
+  },
+  "statistics": [
+    { "value": "12+", "title": "Blogs Published" },
+    { "value": "18K+", "title": "Views on Finsweet" },
+    { "value": "30K+", "title": "Total active Users" }
+  ]
+}

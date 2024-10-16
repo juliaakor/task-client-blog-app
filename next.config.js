@@ -1,9 +1,14 @@
 // @ts-check
 
-const createNextIntlPlugin = require('next-intl/plugin');
+import createNextIntlPlugin from 'next-intl/plugin';
+
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ['s3-alpha-sig.figma.com'],
+  },
+};
 
-module.exports = withNextIntl(nextConfig);
+export default withNextIntl(nextConfig);

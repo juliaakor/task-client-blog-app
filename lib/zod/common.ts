@@ -16,3 +16,10 @@ export const dateSchema = z.date();
 export const idSchema = requiredStrSchema.uuid();
 
 export const emailSchema = requiredStrSchema.email();
+
+export const StaticImageDataSchema = z.object({
+  blurDataURL: z.string().optional(),
+  height: z.number(),
+  src: requiredStrSchema,
+  width: z.number(),
+});

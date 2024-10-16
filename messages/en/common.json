@@ -1,0 +1,47 @@
+{
+  "logoTitle": "Modsen Client Blog",
+  "navigation": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About us",
+    "contact": "Contact us",
+    "policy": "Privacy Policy"
+  },
+  "lettersSection": {
+    "title": "Subscribe to our news letter to get latest updates and news",
+    "form": {
+      "placeholder": "Enter Your Email",
+      "submitButtonText": "Subscribe",
+      "validationMessages": {
+        "required": "Field is required",
+        "email": "Email is not valid"
+      }
+    }
+  },
+  "joinSection": {
+    "title": "Join our team to be a part of our story",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "redirectButtonTitle": "Join Now"
+  },
+  "contactInfo": {
+    "address": "Finstreet 118 2561 Fintown\nHello@finsweet.com  020 7993 2905"
+  },
+  "buttons": {
+    "nextButtonTitle": "Next",
+    "prevButtonTitle": "Prev",
+    "viewAllButtonTitle": "View All",
+    "readMoreButtonTitle": "Read More",
+    "aboutUsButtonTitle": "Discover our story",
+    "videoButtonTitle": "Video about us",
+    "resetPageButtonTitle": "Try again"
+  },
+  "toasts": {
+    "failedSubscribe": "Sorry, something happened with the mail service, try subscribing later",
+    "successSubscribe": "You have successfully subscribed to our blog",
+    "failedSendFeedback": "Sorry, we were unable to submit your feedback, please try again later",
+    "successSendFeedback": "Your feedback has been successfully sent"
+  },
+  "pageError": "Something went wrong!",
+  "pageLoading": "Loading...",
+  "noPosts": "No posts"
+}

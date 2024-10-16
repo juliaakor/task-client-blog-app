@@ -1,0 +1,47 @@
+{
+  "logoTitle": "Блог клиентов Modsen",
+  "navigation": {
+    "home": "Главная",
+    "blog": "Блог",
+    "about": "О нас",
+    "contact": "Свяжитесь с нами",
+    "policy": "Политика конфиденциальности"
+  },
+  "lettersSection": {
+    "title": "Подпишитесь на нашу рассылку, чтобы получать последние обновления и новости",
+    "form": {
+      "placeholder": "Введите вашу почту",
+      "submitButtonText": "Подписаться",
+      "validationMessages": {
+        "required": "Поле обязательно",
+        "email": "Email не действителен"
+      }
+    }
+  },
+  "joinSection": {
+    "title": "Присоединяйтесь к нашей команде, чтобы стать частью нашей истории",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "redirectButtonTitle": "Присоединиться"
+  },
+  "contactInfo": {
+    "address": "Улица Фин 118 2561 Минск\nHello@finsweet.com  020 7993 2905"
+  },
+  "buttons": {
+    "nextButtonTitle": "Следующая",
+    "prevButtonTitle": "Предыдущая",
+    "viewAllButtonTitle": "Смотреть все",
+    "readMoreButtonTitle": "Подробнее",
+    "aboutUsButtonTitle": "Узнайте нашу историю",
+    "videoButtonTitle": "Видео о нас",
+    "resetPageButtonTitle": "Попробовать ещё"
+  },
+  "toasts": {
+    "failedSubscribe": "Извините, что-то случилось с почтовым сервисом, попробуйте подписаться позже",
+    "successSubscribe": "Вы успешно подписались на наш блог",
+    "failedSendFeedback": "Извините, мы не смогли отправить ваш отзыв, повторите попытку позже",
+    "successSendFeedback": "Ваш отзыв успешно отправлен"
+  },
+  "pageError": "Что-то пошло не так!",
+  "pageLoading": "Загрузка...",
+  "noPosts": "Нет постов"
+}

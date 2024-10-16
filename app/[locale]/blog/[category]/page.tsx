@@ -8,6 +8,7 @@ import { z } from 'zod';
 
 import { Link, useRouter } from '@/i18n';
 import { CategoryList } from '@components/CategoryList';
+import { ErrorBoundary } from '@components/ErrorBoundary';
 import { Section } from '@components/Section';
 import { Categories, CategoriesValues, TagsValues } from '@constants/entities';
 import { ROUTES } from '@constants/navigation';
@@ -101,21 +102,23 @@ export default function Category({ params }: CategoryProps) {
             </Typography>
           )}
 
-          {data && data?.posts.length > 0
-            ? data?.posts.map(({ id, image, name, preview, userId }) => (
-                <Link key={id} href={ROUTES.post.replace('[id]', userId).replace('[postId]', id)}>
-                  <PostCard
-                    type="medium"
-                    className="max-768:flex-col"
-                    imageClassName="object-contain w-[17rem] h-[18rem] max-425:min-w-full max-425:w-full"
-                    preview={preview}
-                    title={name}
-                    category={categoryInfo.title}
-                    image={image as StaticImageData}
-                  />
-                </Link>
-              ))
-            : isLoading || <Typography tag="h3">{commonTranslations('noPosts')}</Typography>}
+          <ErrorBoundary>
+            {data && data?.posts.length > 0
+              ? data?.posts.map(({ id, image, name, preview, userId }) => (
+                  <Link key={id} href={ROUTES.post.replace('[id]', userId).replace('[postId]', id)}>
+                    <PostCard
+                      type="medium"
+                      className="max-768:flex-col"
+                      imageClassName="object-contain w-[17rem] h-[18rem] max-425:min-w-full max-425:w-full"
+                      preview={preview}
+                      title={name}
+                      category={categoryInfo.title}
+                      image={image as StaticImageData}
+                    />
+                  </Link>
+                ))
+              : isLoading || <Typography tag="h3">{commonTranslations('noPosts')}</Typography>}
+          </ErrorBoundary>
         </div>
         <div className="w-[18rem]">
           <div className="mb-14">

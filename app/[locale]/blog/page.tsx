@@ -10,9 +10,9 @@ import { ENV } from '@constants/env';
 import { PageContent } from '@lib/components/PageContent';
 import { Typography } from '@lib/components/Typography';
 
-import { LayoutProps } from '../types';
+import { BlogProps } from './types';
 
-export default async function Blog({ params }: LayoutProps) {
+export default async function Blog({ params }: BlogProps) {
   const t = await getTranslations('home');
   const commonTranslations = await getTranslations('common');
 

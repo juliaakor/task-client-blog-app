@@ -1,11 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 
-import { getPostById } from '@/api/getPostById';
 import { ROUTES } from '@/constants/navigation';
 import { Link } from '@/i18n';
+import { getAllPosts } from '@/lib/api/getAllPosts';
+import { getPostById } from '@/lib/api/getPostById';
+import { getUserById } from '@/lib/api/getUserById';
 import { Typography } from '@/lib/components/Typography';
-import { getAllPosts } from '@api/getAllPosts';
-import { getUserById } from '@api/getUserById';
 import { ENV } from '@constants/env';
 import { PostCard } from '@lib/components/cards/PostCard';
 import { dateToString } from '@lib/format/dateToString';
@@ -44,7 +44,7 @@ export const PostsPreview = async () => {
             post={{ ...featuredPost, user: featuredPostUser }}
             isSubTitleSection
             className="flex-col-reverse w-full [&_div]:w-full p-0 [&_button]:w-1/3"
-            imageClassName="min-w-full h-[10rem] object-cover float-top"
+            imageClassName="min-w-full min-h-[15rem] object-cover float-top"
             buttonLinkTitle={commonTranslations.raw('buttons.readMoreButtonTitle')}
           />
         </div>

@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
 import { Link } from '@/i18n';
-import { getAllPosts } from '@api/getAllPosts';
-import { getPostById } from '@api/getPostById';
-import { getUserById } from '@api/getUserById';
+import { getAllPosts } from '@/lib/api/getAllPosts';
+import { getPostById } from '@/lib/api/getPostById';
+import { getUserById } from '@/lib/api/getUserById';
 import { CategoryTranslation } from '@components/CategoryList/types';
 import { JoinSection } from '@components/JoinSection';
 import { PostsList } from '@components/PostsList';

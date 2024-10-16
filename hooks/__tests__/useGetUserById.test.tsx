@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render } from '@testing-library/react';
 
-import { getUserById } from '@api/getUserById';
+import { getUserById } from '@/lib/api/getUserById';
 import { useGetUserById } from '@hooks/useUsers';
 import { User } from '@lib/zod/user';
 

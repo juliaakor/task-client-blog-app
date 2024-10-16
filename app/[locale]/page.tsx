@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
-import { getPostById } from '@api/getPostById';
-import { getUserById } from '@api/getUserById';
+import { getPostById } from '@/lib/api/getPostById';
+import { getUserById } from '@/lib/api/getUserById';
 import { FeaturedPost } from '@components/FeaturedPost';
 import { HomePageContent } from '@components/HomePageContent';
 import { PostsPreview } from '@components/PostsPreview';

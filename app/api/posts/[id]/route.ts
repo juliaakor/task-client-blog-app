@@ -1,4 +1,4 @@
-import { createErrorResponse } from '@api/createErrorResponse';
+import { createErrorResponse } from '@/lib/api/createErrorResponse';
 import { NOT_FOUND_ERROR_STATUS_CODE } from '@constants/api';
 import posts from '@lib/mocks/posts';
 

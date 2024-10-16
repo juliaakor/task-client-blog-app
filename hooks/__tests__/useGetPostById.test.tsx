@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render } from '@testing-library/react';
 
-import { getPostById } from '@api/getPostById';
+import { getPostById } from '@/lib/api/getPostById';
 import { Categories } from '@constants/entities';
 import { useGetPostById } from '@hooks/usePosts';
 import { Post } from '@lib/zod/post';

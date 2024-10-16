@@ -1,4 +1,4 @@
-import { fetchAllPostsByParams } from '@api/postUtils';
+import { fetchAllPostsByParams } from '@/lib/api/postUtils';
 
 import { getPostsByUserId } from '../getPostByUserId';
 

@@ -1,8 +1,8 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render } from '@testing-library/react';
 
-import { getAllPosts } from '@api/getAllPosts';
-import { GetPostsProps } from '@api/postUtils';
+import { getAllPosts } from '@/lib/api/getAllPosts';
+import { GetPostsProps } from '@/lib/api/postUtils';
 import { useGetPosts } from '@hooks/usePosts';
 
 jest.mock('@api/getAllPosts');

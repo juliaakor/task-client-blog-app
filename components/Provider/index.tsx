@@ -3,7 +3,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
-import { getAllPosts } from '@api/getAllPosts';
+import { getAllPosts } from '@/lib/api/getAllPosts';
 import { apiUseQueryOptions } from '@lib/api';
 
 import { ProviderProps } from './types';

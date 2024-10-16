@@ -1,6 +1,6 @@
-import { filterPosts } from '@api/filterPosts';
-import { getPaginationParams } from '@api/getPaginationParams';
-import { paginateData } from '@api/paginateData';
+import { filterPosts } from '@/lib/api/filterPosts';
+import { getPaginationParams } from '@/lib/api/getPaginationParams';
+import { paginateData } from '@/lib/api/paginateData';
 import { POSTS_LIMIT_DEFAULT } from '@constants/api';
 import posts from '@lib/mocks/posts';
 

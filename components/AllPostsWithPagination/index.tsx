@@ -2,8 +2,9 @@
 
 import { StaticImageData } from 'next/image';
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
+import { usePaginationButtons } from '@/hooks/usePaginationButtons';
 import { Link } from '@/i18n';
 import { ROUTES } from '@constants/navigation';
 import { useGetPosts } from '@hooks/usePosts';
@@ -14,42 +15,28 @@ export const AllPostsWithPagination = () => {
   const categoriesTranslations = useTranslations('blog.categories.values');
   const homeTranslations = useTranslations('home');
   const buttonsTranslations = useTranslations('common.buttons');
+  const commonTranslations = useTranslations('common');
 
   const [currentPage, setCurrentPage] = useState(1);
   const { data, isLoading } = useGetPosts({ limit: 5, page: currentPage });
 
-  const handleNextClick = () => {
+  const handleNextClick = useCallback(() => {
     setCurrentPage((prev) => prev + 1);
-  };
+  }, []);
 
-  const handlePrevClick = () => {
+  const handlePrevClick = useCallback(() => {
     setCurrentPage((prev) => prev - 1);
-  };
+  }, []);
 
-  const paginationButtons = [
-    {
-      disabled: currentPage === 1,
-      name: 'prev',
-      onClick: handlePrevClick,
-      TextComponent: (
-        <Typography className="mr-2 text-inherit" tag="h3">
-          {`< ${buttonsTranslations('prevButtonTitle')}`}
-        </Typography>
-      ),
-    },
-    {
-      disabled: data?.posts.length === 0,
-      name: 'next',
-      onClick: handleNextClick,
-      TextComponent: (
-        <Typography className="ml-2 text-inherit" tag="h3">
-          {`${buttonsTranslations('nextButtonTitle')} >`}
-        </Typography>
-      ),
-    },
-  ];
+  const paginationButtons = usePaginationButtons({
+    buttonsTranslations,
+    currentPage,
+    currentPostsAmount: data?.posts.length || 0,
+    handleNextClick,
+    handlePrevClick,
+  })();
 
-  if (isLoading) return <Typography tag="h5">Loading...</Typography>;
+  if (isLoading) return <Typography tag="h5">{commonTranslations('pageLoading')}</Typography>;
 
   return (
     <div>
@@ -72,11 +59,11 @@ export const AllPostsWithPagination = () => {
             </Link>
           ))
         ) : (
-          <Typography tag="h5">No posts</Typography>
+          <Typography tag="h5">{commonTranslations('noPosts')}</Typography>
         )}
       </div>
-      <div className="w-1/4 m-auto mt-16 max-768:w-3/4 text-center">
-        {paginationButtons.map(({ disabled, name, onClick, TextComponent }) => (
+      <div className="flex gap-6 m-auto mt-16 w-max text-center">
+        {paginationButtons.map(({ disabled, name, onClick, text }) => (
           <button
             type="button"
             key={name}
@@ -85,7 +72,9 @@ export const AllPostsWithPagination = () => {
             disabled={disabled}
             className={`${disabled ? 'text-light-gray' : ''}`}
           >
-            {TextComponent}
+            <Typography tag="h3" className="text-inherit">
+              {text}
+            </Typography>
           </button>
         ))}
       </div>

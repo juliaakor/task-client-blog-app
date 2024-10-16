@@ -41,5 +41,7 @@
     "failedSendFeedback": "Sorry, we were unable to submit your feedback, please try again later",
     "successSendFeedback": "Your feedback has been successfully sent"
   },
-  "pageError": "Something went wrong!"
+  "pageError": "Something went wrong!",
+  "pageLoading": "Loading...",
+  "noPosts": "No posts"
 }

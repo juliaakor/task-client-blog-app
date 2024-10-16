@@ -49,5 +49,9 @@
     "intro": "Привет, меня зовут {name}, и добро пожаловать в мой блог.",
     "postsHeader": "Мои посты"
   },
-  "nextPostsHeader": "Что читать дальше"
+  "nextPostsHeader": "Что читать дальше",
+  "featuredSubTitles": {
+    "category": "Опубликовано в",
+    "post": "Избранное"
+  }
 }

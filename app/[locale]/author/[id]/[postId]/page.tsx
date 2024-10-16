@@ -2,6 +2,7 @@ import parse from 'html-react-parser';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
+import { Link } from '@/i18n';
 import { getAllPosts } from '@api/getAllPosts';
 import { getPostById } from '@api/getPostById';
 import { getUserById } from '@api/getUserById';
@@ -10,6 +11,7 @@ import { JoinSection } from '@components/JoinSection';
 import { PostsList } from '@components/PostsList';
 import { ENV } from '@constants/env';
 import { CATEGORY_ICONS } from '@constants/layout';
+import { ROUTES } from '@constants/navigation';
 import { PageContent } from '@lib/components/PageContent';
 import { Typography } from '@lib/components/Typography';
 import { dateToString } from '@lib/format/dateToString';
@@ -29,6 +31,9 @@ const replaceComponent = (domNode: any) => {
   return null;
 };
 
+const USER_POSTS_DEFAULT_PAGE = 1;
+const USER_POSTS_DEFAULT_LIMIT = 3;
+
 export default async function Post({ params }: PostProps) {
   const t = await getTranslations('blog');
 
@@ -43,7 +48,10 @@ export default async function Post({ params }: PostProps) {
   const user = await getUserById(userId, ENV.NEXT_PUBLIC_BASE_URL);
   const { avatar = '', name: userName } = user;
 
-  const { posts } = await getAllPosts({ category, limit: 3, page: 1, userId }, ENV.NEXT_PUBLIC_BASE_URL);
+  const { posts } = await getAllPosts(
+    { category, limit: USER_POSTS_DEFAULT_LIMIT, page: USER_POSTS_DEFAULT_PAGE, userId },
+    ENV.NEXT_PUBLIC_BASE_URL
+  );
 
   const categoriesValues = t.raw('categories.values') as Record<string, CategoryTranslation>;
   const { icon: categoryIcon, label: cateroryLabel } = {
@@ -57,25 +65,27 @@ export default async function Post({ params }: PostProps) {
     <main>
       <PageContent>
         <div className="w-1/2 max-768:w-3/4">
-          <div className="flex gap-4 mb-6">
-            <Image
-              className="rounded-full object-cover w-12 h-12"
-              src={avatar}
-              alt="Blog image"
-              width={48}
-              height={48}
-            />
-            <div>
-              <Typography className="text-light-blue" tag="h3">
-                {userName}
-              </Typography>
-              <Typography className="text-light-gray" tag="body1">
-                {t('postHeader.dateFull', {
-                  date: dateToString(createdAt, 'full', params.locale),
-                })}
-              </Typography>
+          <Link href={ROUTES.author.replace('[id]', userId)}>
+            <div className="flex gap-4 mb-6">
+              <Image
+                className="rounded-full object-cover w-12 h-12"
+                src={avatar}
+                alt="Blog image"
+                width={48}
+                height={48}
+              />
+              <div>
+                <Typography className="text-light-blue" tag="h3">
+                  {userName}
+                </Typography>
+                <Typography className="text-light-gray" tag="body1">
+                  {t('postHeader.dateFull', {
+                    date: dateToString(createdAt, 'full', params.locale),
+                  })}
+                </Typography>
+              </div>
             </div>
-          </div>
+          </Link>
           <Typography className="mb-8" tag="h1">
             {name}
           </Typography>
@@ -84,16 +94,16 @@ export default async function Post({ params }: PostProps) {
             {cateroryLabel}
           </Typography>
         </div>
-        <Image className="w-full" src={image} alt="Blog image" />
+        <Image className="w-full max-h-[100vh] object-cover" src={image} alt="Blog image" />
         <div className="w-1/2 flex flex-col gap-12 max-768:w-3/4">{parsedPost}</div>
         <div>
           <Typography className="mb-16" tag="h2">
             {t('nextPostsHeader')}
           </Typography>
-          <div className="flex gap-16 flex-wrap">
+          <div className="flex gap-16 max-768:flex-wrap">
             <PostsList
               className="flex-col"
-              imageClassName="w-[29rem] min-w-[29rem] items-stretch w-auto"
+              imageClassName="w-full items-stretch "
               posts={posts.map((post) => ({ ...post, user }))}
               locale={params.locale}
             />

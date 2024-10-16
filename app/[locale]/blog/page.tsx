@@ -10,18 +10,25 @@ import { ENV } from '@constants/env';
 import { PageContent } from '@lib/components/PageContent';
 import { Typography } from '@lib/components/Typography';
 
-export default async function Blog() {
+import { BlogProps } from './types';
+
+export default async function Blog({ params }: BlogProps) {
   const t = await getTranslations('home');
-  const post = await getPostById('29f5beff-7847-4c76-8411-0cbb6e5a8114', ENV.NEXT_PUBLIC_BASE_URL);
+  const commonTranslations = await getTranslations('common');
+
+  const post = await getPostById(process.env.FEATURED_POST_ID_BLOG_PAGE as string, ENV.NEXT_PUBLIC_BASE_URL);
   const user = await getUserById(post.userId, ENV.NEXT_PUBLIC_BASE_URL);
 
   return (
     <>
-      <FeaturedPost post={{ ...post, user }} className="bg-white-03" buttonLinkTitle="Read More >" />
+      <FeaturedPost
+        post={{ ...post, user }}
+        locale={params.locale}
+        className="bg-white-03 py-20 px-20"
+        buttonLinkTitle={commonTranslations('buttons.readMoreButtonTitle')}
+      />
       <PageContent>
-        <div>
-          <AllPostsWithPagination />
-        </div>
+        <AllPostsWithPagination />
 
         <div>
           <Typography tag="h2" className="mb-12 text-left">

@@ -51,7 +51,7 @@ export const HomePageContent = () => {
       </div>
       <div
         ref={testimonialsRef}
-        className={`bg-beige-01 py-20 px-24 max-768:flex max-768:flex-col flex ${animationClassName(testimonialsSectionInView)}`}
+        className={`bg-beige-01 py-20 max-425:px-5 px-24 max-768:flex max-768:flex-col flex ${animationClassName(testimonialsSectionInView)}`}
       >
         <Testimonials />
       </div>

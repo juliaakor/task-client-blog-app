@@ -8,4 +8,6 @@ export interface FeaturedPostProps {
   className?: string;
   imageClassName?: string;
   buttonLinkTitle?: string;
+  isSubTitleSection?: boolean;
+  hasSubTitleName?: boolean;
 }

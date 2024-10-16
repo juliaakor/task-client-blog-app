@@ -57,7 +57,7 @@ export const Testimonials = () => {
 
   return (
     <>
-      <div className="pr-20 mr-24 border-r border-light-gray max-768:pr-0 max-768:pb-20 max-768:mr-0 max-768:mb-24) max-768:border-r-0">
+      <div className="pr-20 mr-24 border-r border-light-gray max-768:pr-0 max-768:pb-20 max-768:mr-0 max-768:mb-24 max-768:border-r-0">
         <Typography className="mb-3" tag="cap1">
           {t('sectionName')}
         </Typography>

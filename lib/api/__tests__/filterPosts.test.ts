@@ -1,4 +1,4 @@
-import { filterPosts } from '@api/filterPosts';
+import { filterPosts } from '@/lib/api/filterPosts';
 
 const mockPosts = [
   {

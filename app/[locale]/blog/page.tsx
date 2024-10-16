@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 
-import { getPostById } from '@api/getPostById';
-import { getUserById } from '@api/getUserById';
+import { getPostById } from '@/lib/api/getPostById';
+import { getUserById } from '@/lib/api/getUserById';
 import { AllPostsWithPagination } from '@components/AllPostsWithPagination';
 import { CategoryList } from '@components/CategoryList';
 import { FeaturedPost } from '@components/FeaturedPost';

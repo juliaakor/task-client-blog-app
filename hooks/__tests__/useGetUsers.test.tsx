@@ -1,11 +1,11 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { render } from '@testing-library/react';
 
-import { getAllUsers } from '@api/getAllUsers';
+import { getAllUsers } from '@/lib/api/getAllUsers';
 import { useGetUsers } from '@hooks/useUsers';
 import { User, UsersResponse } from '@lib/zod/user';
 
-jest.mock('@api/getAllUsers');
+jest.mock('@lib/api/getAllUsers');
 
 const queryClient = new QueryClient();
 

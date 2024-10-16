@@ -1,8 +1,8 @@
-import { fetchAllPostsByParams } from '@api/postUtils';
+import { fetchAllPostsByParams } from '@/lib/api/postUtils';
 
 import { getPostsByUserId } from '../getPostByUserId';
 
-jest.mock('@api/postUtils', () => ({
+jest.mock('@lib/api/postUtils', () => ({
   fetchAllPostsByParams: jest.fn(),
 }));
 

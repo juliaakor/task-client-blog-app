@@ -1,4 +1,4 @@
-import { getPaginationParams } from '@api/getPaginationParams';
+import { getPaginationParams } from '@/lib/api/getPaginationParams';
 import { PAGE_NUMBER_DEFAULT } from '@constants/api';
 
 describe('getPaginationParams', () => {

@@ -1,8 +1,6 @@
-import { NextResponse } from 'next/server';
-
-import { filterPosts } from '@api/filterPosts';
-import { getPaginationParams } from '@api/getPaginationParams';
-import { paginateData } from '@api/paginateData';
+import { filterPosts } from '@/lib/api/filterPosts';
+import { getPaginationParams } from '@/lib/api/getPaginationParams';
+import { paginateData } from '@/lib/api/paginateData';
 import { POSTS_LIMIT_DEFAULT } from '@constants/api';
 import posts from '@lib/mocks/posts';
 
@@ -16,7 +14,7 @@ export async function GET(request: Request) {
   const filteredPosts = filterPosts(posts, { category, tags: tagsParam });
   const paginatedPosts = paginateData(filteredPosts, page, limit);
 
-  return NextResponse.json({
+  return Response.json({
     page,
     posts: paginatedPosts,
     total: filteredPosts.length,

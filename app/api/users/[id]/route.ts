@@ -1,7 +1,5 @@
-import { NextResponse } from 'next/server';
-
-import { filterPosts } from '@/api/filterPosts';
-import { createErrorResponse } from '@api/createErrorResponse';
+import { createErrorResponse } from '@/lib/api/createErrorResponse';
+import { filterPosts } from '@/lib/api/filterPosts';
 import { NOT_FOUND_ERROR_STATUS_CODE } from '@constants/api';
 import posts from '@lib/mocks/posts';
 import users from '@lib/mocks/users';
@@ -22,7 +20,7 @@ export async function GET(request: Request, { params }: GETUserByIdApiProps) {
 
   const userPosts = filterPosts(posts, { userId });
 
-  return NextResponse.json({
+  return Response.json({
     ...user,
     posts: userPosts,
   });

@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 
-import { getAllUsers, GetUsersProps } from '@api/getAllUsers';
-import { getUserById } from '@api/getUserById';
+import { getAllUsers, GetUsersProps } from '@/lib/api/getAllUsers';
+import { getUserById } from '@/lib/api/getUserById';
 
 export const useGetUsers = (fields: GetUsersProps) =>
   useQuery({ queryFn: () => getAllUsers(fields), queryKey: ['users', { ...fields }] });

@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { Logo } from '@components/common/Logo';
 import { Navbar } from '@components/common/Navbar';
+import LocaleSwitcher from '@components/LocaleSwitcher';
 import { SubscribtionForm } from '@components/SubscribtionForm';
 import { Socials } from '@lib/components/Socials';
 import { AvailableSocialsUnion } from '@lib/components/Socials/types';
@@ -43,6 +44,7 @@ export const Footer = () => {
           links={companyLinks}
         />
       </div>
+      <LocaleSwitcher />
     </footer>
   );
 };

@@ -1,6 +1,4 @@
-import { NextResponse } from 'next/server';
-
-import { createErrorResponse } from '@api/createErrorResponse';
+import { createErrorResponse } from '@/lib/api/createErrorResponse';
 import { NOT_FOUND_ERROR_STATUS_CODE } from '@constants/api';
 import posts from '@lib/mocks/posts';
 
@@ -18,5 +16,5 @@ export async function GET(request: Request, { params }: GETPostByIdApiProps) {
 
   if (!post) return createErrorResponse('Post not found', NOT_FOUND_ERROR_STATUS_CODE);
 
-  return NextResponse.json(post);
+  return Response.json(post);
 }

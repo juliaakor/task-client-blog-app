@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
-import { getPostsByUserId } from '@api/getPostByUserId';
-import { getUserById } from '@api/getUserById';
+import { getPostsByUserId } from '@/lib/api/getPostByUserId';
+import { getUserById } from '@/lib/api/getUserById';
 import { PostsList } from '@components/PostsList';
 import { ENV } from '@constants/env';
 import { Socials } from '@lib/components/Socials';

@@ -1,5 +1,4 @@
-import { Typography } from '@lib/components/Typography';
-import { TypographyTags } from '@lib/components/Typography/types';
+import { Typography, TypographyTags } from 'task-blog-ui-lib';
 
 import { PreviewInfoProps } from './types';
 

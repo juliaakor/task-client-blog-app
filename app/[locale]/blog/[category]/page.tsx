@@ -4,6 +4,7 @@ import { StaticImageData } from 'next/image';
 import { notFound, useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
+import { Button, PostCard, Input, Form, Typography } from 'task-blog-ui-lib';
 import { z } from 'zod';
 
 import { Link, useRouter } from '@/i18n';
@@ -13,11 +14,6 @@ import { Section } from '@components/Section';
 import { Categories, CategoriesValues, TagsValues } from '@constants/entities';
 import { ROUTES } from '@constants/navigation';
 import { useGetPosts } from '@hooks/usePosts';
-import { Button } from '@lib/components/Button';
-import { PostCard } from '@lib/components/cards/PostCard';
-import { Input } from '@lib/components/controls/Input';
-import { Form } from '@lib/components/Form';
-import { Typography } from '@lib/components/Typography';
 
 import { CategoryProps } from './types';
 

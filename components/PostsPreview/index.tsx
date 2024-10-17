@@ -1,16 +1,14 @@
 import { getTranslations } from 'next-intl/server';
+import { PostCard, Typography } from 'task-blog-ui-lib';
 
-import { ROUTES } from '@/constants/navigation';
 import { Link } from '@/i18n';
-import { getAllPosts } from '@/lib/api/getAllPosts';
-import { getPostById } from '@/lib/api/getPostById';
-import { getUserById } from '@/lib/api/getUserById';
-import { Typography } from '@/lib/components/Typography';
+import { FeaturedPost } from '@components/FeaturedPost';
 import { ENV } from '@constants/env';
-import { PostCard } from '@lib/components/cards/PostCard';
+import { ROUTES } from '@constants/navigation';
+import { getAllPosts } from '@lib/api/getAllPosts';
+import { getPostById } from '@lib/api/getPostById';
+import { getUserById } from '@lib/api/getUserById';
 import { dateToString } from '@lib/format/dateToString';
-
-import { FeaturedPost } from '../FeaturedPost';
 
 export const PostsPreview = async () => {
   const t = await getTranslations('blog');

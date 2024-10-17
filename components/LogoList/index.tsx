@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Typography } from 'task-blog-ui-lib';
 
 import { FEATURED_LOGOS } from '@constants/layout';
-import { Typography } from '@lib/components/Typography';
 
 export const LogoList = () => {
   const t = useTranslations('home');

@@ -2,14 +2,13 @@
 
 import { FormikHelpers } from 'formik';
 import { useTranslations } from 'next-intl';
+import { Button, ButtonType } from 'task-blog-ui-lib';
 import { z } from 'zod';
 
-import { useEmail } from '@/hooks/useEmail';
-import { failSendToast, successSendToast } from '@/lib/toasts';
-import { Button } from '@lib/components/Button';
-import { ButtonType } from '@lib/components/Button/types';
-import { Input } from '@lib/components/controls/Input';
-import { Form } from '@lib/components/Form';
+import { Form } from '@components/Form';
+import { Input } from '@components/Input';
+import { useEmail } from '@hooks/useEmail';
+import { failSendToast, successSendToast } from '@lib/toasts';
 
 import { DefaultSubscribtionValues, defaultSubscribtionValues } from './types';
 

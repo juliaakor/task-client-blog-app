@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
+import { Socials, Typography } from 'task-blog-ui-lib';
 
-import { getPostsByUserId } from '@/lib/api/getPostByUserId';
-import { getUserById } from '@/lib/api/getUserById';
 import { PostsList } from '@components/PostsList';
 import { ENV } from '@constants/env';
-import { Socials } from '@lib/components/Socials';
-import { Typography } from '@lib/components/Typography';
+import { getPostsByUserId } from '@lib/api/getPostByUserId';
+import { getUserById } from '@lib/api/getUserById';
 
 import { AuthorProps } from './types';
 

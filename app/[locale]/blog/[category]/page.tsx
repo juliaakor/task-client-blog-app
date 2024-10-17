@@ -4,12 +4,14 @@ import { StaticImageData } from 'next/image';
 import { notFound, useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-import { Button, PostCard, Input, Form, Typography } from 'task-blog-ui-lib';
+import { Button, PostCard, Typography } from 'task-blog-ui-lib';
 import { z } from 'zod';
 
 import { Link, useRouter } from '@/i18n';
 import { CategoryList } from '@components/CategoryList';
 import { ErrorBoundary } from '@components/ErrorBoundary';
+import { Form } from '@components/Form';
+import { Input } from '@components/Input';
 import { Section } from '@components/Section';
 import { Categories, CategoriesValues, TagsValues } from '@constants/entities';
 import { ROUTES } from '@constants/navigation';

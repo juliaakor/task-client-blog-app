@@ -40,7 +40,7 @@ export const AuthorCard = ({
       </div>
       <Socials
         className="gap-4"
-        iconStyle="fill-dark-blue dark:fill-white-01"
+        iconStyle="fill-dark-blue"
         isIncluded={[
           AvailableSocials.Facebook,
           AvailableSocials.Instagram,

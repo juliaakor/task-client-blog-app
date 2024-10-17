@@ -1,11 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Button, Typography } from 'task-blog-ui-lib';
 
-import { ROUTES } from '@/constants/navigation';
 import { useRouter } from '@/i18n';
-import { Button } from '@/lib/components/Button';
-import { Typography } from '@/lib/components/Typography';
+import { ROUTES } from '@constants/navigation';
 
 export const JoinSection = () => {
   const t = useTranslations('common');

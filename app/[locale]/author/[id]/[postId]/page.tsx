@@ -1,19 +1,18 @@
 import parse from 'html-react-parser';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
+import { PageContent, Typography } from 'task-blog-ui-lib';
 
 import { Link } from '@/i18n';
-import { getAllPosts } from '@/lib/api/getAllPosts';
-import { getPostById } from '@/lib/api/getPostById';
-import { getUserById } from '@/lib/api/getUserById';
 import { CategoryTranslation } from '@components/CategoryList/types';
 import { JoinSection } from '@components/JoinSection';
 import { PostsList } from '@components/PostsList';
 import { ENV } from '@constants/env';
 import { CATEGORY_ICONS } from '@constants/layout';
 import { ROUTES } from '@constants/navigation';
-import { PageContent } from '@lib/components/PageContent';
-import { Typography } from '@lib/components/Typography';
+import { getAllPosts } from '@lib/api/getAllPosts';
+import { getPostById } from '@lib/api/getPostById';
+import { getUserById } from '@lib/api/getUserById';
 import { dateToString } from '@lib/format/dateToString';
 
 import { PostProps } from './types';

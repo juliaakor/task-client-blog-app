@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Typography } from 'task-blog-ui-lib';
 
 import peopleLookingAtTheSea from '@assets/images/peopleLookingAtTheSea.png';
 import { Statistics } from '@components/common/Statistics';
-import { Typography } from '@lib/components/Typography';
 
 export const IntroSection = () => {
   const t = useTranslations('about');

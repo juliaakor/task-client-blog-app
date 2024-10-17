@@ -1,12 +1,12 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Button } from 'task-blog-ui-lib';
 
-import { useModal } from '@/hooks/useModal';
-import { Button } from '@/lib/components/Button';
 import { Logo } from '@components/common/Logo';
 import { Navbar } from '@components/common/Navbar';
 import { Modal } from '@components/Modal';
+import { useModal } from '@hooks/useModal';
 
 export const Header = () => {
   const t = useTranslations('common');

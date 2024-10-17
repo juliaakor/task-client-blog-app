@@ -1,11 +1,10 @@
 import clsx from 'clsx';
 import { useTranslations } from 'next-intl';
+import { CategoryCard } from 'task-blog-ui-lib';
 
 import { Link } from '@/i18n';
 import { CATEGORY_ICONS } from '@constants/layout';
 import { ROUTES } from '@constants/navigation';
-import { CategoryCardMedium } from '@lib/components/cards/CategoryCardMedium';
-import { CategoryCardSmall } from '@lib/components/cards/CategoryCardSmall';
 
 import { CategoryListProps, CategoryTranslation } from './types';
 
@@ -26,9 +25,9 @@ export const CategoryList = ({ cardClassName, className, isFullInfo = false }: C
       {categories.map(({ icon, info, label, name }) => (
         <Link key={name} href={ROUTES.blogCategory.replace('[category]', name)}>
           {isFullInfo ? (
-            <CategoryCardMedium label={label} name={name} icon={icon} info={info} className={cardClassName} />
+            <CategoryCard type="medium" label={label} name={name} icon={icon} info={info} className={cardClassName} />
           ) : (
-            <CategoryCardSmall key={name} label={label} name={name} icon={icon} className={cardClassName} />
+            <CategoryCard type="small" key={name} label={label} name={name} icon={icon} className={cardClassName} />
           )}
         </Link>
       ))}

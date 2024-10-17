@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
-
-import { Typography } from '@lib/components/Typography';
+import { Typography } from 'task-blog-ui-lib';
 
 import { StatisticsProps, StatValue } from './types';
 

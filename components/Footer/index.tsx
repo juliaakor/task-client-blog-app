@@ -1,11 +1,10 @@
 import { useTranslations } from 'next-intl';
+import { Socials, AvailableSocialsUnion } from 'task-blog-ui-lib';
 
 import { Logo } from '@components/common/Logo';
 import { Navbar } from '@components/common/Navbar';
 import LocaleSwitcher from '@components/LocaleSwitcher';
 import { SubscribtionForm } from '@components/SubscribtionForm';
-import { Socials } from '@lib/components/Socials';
-import { AvailableSocialsUnion } from '@lib/components/Socials/types';
 
 const companyLinks = {
   facebook: 'https://www.facebook.com/',

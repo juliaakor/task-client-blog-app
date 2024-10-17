@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
 
-import { getAllPosts } from '@/lib/api/getAllPosts';
-import { getPostById } from '@/lib/api/getPostById';
-import { getPostsByUserId } from '@/lib/api/getPostByUserId';
-import { GetPostsProps } from '@/lib/api/postUtils';
+import { getAllPosts } from '@lib/api/getAllPosts';
+import { getPostById } from '@lib/api/getPostById';
+import { getPostsByUserId } from '@lib/api/getPostByUserId';
+import { GetPostsProps } from '@lib/api/postUtils';
 
 export const useGetPosts = ({ category, limit, page, tags }: GetPostsProps) => {
   return useQuery({

@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
-import { ROUTES } from '@/constants/navigation';
 import { Link } from '@/i18n';
+import { ROUTES } from '@constants/navigation';
 
 export const Logo = () => {
   const t = useTranslations('common');

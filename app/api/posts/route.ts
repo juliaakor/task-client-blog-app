@@ -1,7 +1,7 @@
-import { filterPosts } from '@/lib/api/filterPosts';
-import { getPaginationParams } from '@/lib/api/getPaginationParams';
-import { paginateData } from '@/lib/api/paginateData';
 import { POSTS_LIMIT_DEFAULT } from '@constants/api';
+import { filterPosts } from '@lib/api/filterPosts';
+import { getPaginationParams } from '@lib/api/getPaginationParams';
+import { paginateData } from '@lib/api/paginateData';
 import posts from '@lib/mocks/posts';
 
 export async function GET(request: Request) {

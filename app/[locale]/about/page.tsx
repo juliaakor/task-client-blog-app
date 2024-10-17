@@ -1,7 +1,8 @@
+import { PageContent } from 'task-blog-ui-lib';
+
 import { AboutUsSection } from '@components/AboutUsSection';
 import { AuthorList } from '@components/AuthorList';
 import { JoinSection } from '@components/JoinSection';
-import { PageContent } from '@lib/components/PageContent';
 
 export default function About() {
   return (

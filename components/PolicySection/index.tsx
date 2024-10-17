@@ -1,5 +1,5 @@
-import { Typography } from '@lib/components/Typography';
-import { TypographyTags } from '@lib/components/Typography/types';
+import { Typography, TypographyTags } from 'task-blog-ui-lib';
+
 import { PolicyInfo } from '@type/policy';
 
 export const PolicySection = ({ id, paragraphs, subTitle, title }: PolicyInfo) => {

@@ -3,10 +3,10 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { KeyboardEvent, useState } from 'react';
+import { Typography } from 'task-blog-ui-lib';
 
 import leftArrow from '@assets/icons/ArrowLeft.svg';
 import rightArrow from '@assets/icons/ArrowRight.svg';
-import { Typography } from '@lib/components/Typography';
 
 import { TestimonialsInfo } from './types';
 

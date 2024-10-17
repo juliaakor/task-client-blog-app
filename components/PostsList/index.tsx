@@ -1,10 +1,9 @@
 import { StaticImageData } from 'next/image';
 import { getTranslations } from 'next-intl/server';
+import { PostCard, Typography } from 'task-blog-ui-lib';
 
 import { Link } from '@/i18n';
 import { ROUTES } from '@constants/navigation';
-import { PostCard } from '@lib/components/cards/PostCard';
-import { Typography } from '@lib/components/Typography';
 import { dateToString } from '@lib/format/dateToString';
 
 import { PostsListProps } from './types';

@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 import { useField } from 'formik';
 import { useId } from 'react';
+import { ErrorMessage } from 'task-blog-ui-lib';
 
-import { defaultControlStyle } from '@/lib/components/controls/defaults';
-import { ErrorMessage } from '@/lib/components/ErrorMessage';
+import { defaultControlStyle } from '@constants/defaults';
 
 import { TextareaProps } from './types';
 

@@ -1,5 +1,5 @@
-import { getPaginationParams } from '@/lib/api/getPaginationParams';
 import { PAGE_NUMBER_DEFAULT } from '@constants/api';
+import { getPaginationParams } from '@lib/api/getPaginationParams';
 
 describe('getPaginationParams', () => {
   const defaultLimit = 1;

@@ -13,14 +13,6 @@
   --c-error: var(--c-red-01);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--c-dark-gray);
-    --foreground: var(--c-white-01);
-    --bg-modal: var(--c-light-gray);
-  }
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;

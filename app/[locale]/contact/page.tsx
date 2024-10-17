@@ -1,10 +1,10 @@
 import { useTranslations } from 'next-intl';
+import { Typography } from 'task-blog-ui-lib';
 
 import { ContactForm } from '@components/ContactForm';
 import { ContactInfo } from '@components/ContactInfo';
 import { Map } from '@components/Map';
 import { getLatitudeByKey, getLongitudeByKey, OFFICES } from '@constants/contact';
-import { Typography } from '@lib/components/Typography';
 
 export default function Contact() {
   const t = useTranslations('contact');

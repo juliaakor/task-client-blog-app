@@ -1,10 +1,10 @@
 'use client';
 
+import { AuthorCard, AvailableSocials } from 'task-blog-ui-lib';
+
 import { Link } from '@/i18n';
 import { ROUTES } from '@constants/navigation';
 import { useGetUsers } from '@hooks/useUsers';
-import { AuthorCard } from '@lib/components/cards/AuthorCard';
-import { AvailableSocials } from '@lib/components/Socials/types';
 
 import { AuthorListProps } from './types';
 

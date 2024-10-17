@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useInViewRef } from 'rooks';
+import { Typography } from 'task-blog-ui-lib';
 
 import { AboutUsPreview } from '@components/AboutUsPreview';
 import { AuthorList } from '@components/AuthorList';
@@ -10,7 +11,6 @@ import { JoinSection } from '@components/JoinSection';
 import { LogoList } from '@components/LogoList';
 import { ReasonsPreview } from '@components/ReasonsPreview';
 import { Testimonials } from '@components/Testimonials';
-import { Typography } from '@lib/components/Typography';
 
 const animationClassName = (sectionInView: boolean) =>
   `transition-all duration-700 ${sectionInView ? 'opacity-100 animate-fadeIn' : 'opacity-0'}`;

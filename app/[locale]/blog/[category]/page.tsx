@@ -70,7 +70,7 @@ export default function Category({ params }: CategoryProps) {
     const params = new URLSearchParams(searchParams);
     params.set('tags', updatedTags.join(','));
 
-    router.push(`?${params.toString()}`);
+    router.push(`?${params.toString()}`, { scroll: false });
   };
 
   const handleSubmit = async ({ search }: typeof defaultValues) => {
@@ -81,7 +81,7 @@ export default function Category({ params }: CategoryProps) {
 
     const params = new URLSearchParams(searchParams);
     params.set('tags', updatedTags.join(','));
-    router.push(`?${params.toString()}`);
+    router.push(`?${params.toString()}`, { scroll: false });
   };
 
   return (

@@ -41,6 +41,7 @@ export const Footer = () => {
           className="gap-6 filter brightness-[3] saturate-50"
           isIncluded={Object.keys(companyLinks) as AvailableSocialsUnion[]}
           links={companyLinks}
+          iconStyle="max-w-4 max-h-4"
         />
       </div>
       <LocaleSwitcher />

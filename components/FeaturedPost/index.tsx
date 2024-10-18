@@ -35,8 +35,8 @@ export const FeaturedPost = ({
   };
 
   const subTitle = isSubTitleSection
-    ? `${t('featuredSubTitles.category')} ${categoryLabel}`
-    : t('featuredSubTitles.post');
+    ? `${t.raw('featuredSubTitles.category')} ${categoryLabel}`
+    : t.raw('featuredSubTitles.post');
 
   return (
     <div className={className}>

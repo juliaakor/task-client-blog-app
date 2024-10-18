@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import { Typography, TypographyTags } from 'task-blog-ui-lib';
 
 import { PreviewInfoProps } from './types';
@@ -23,8 +24,8 @@ export const PreviewInfo = ({
 
   return (
     <div key={sectionName} className={className}>
-      {previewInfo.map(({ className, tag, value }) => (
-        <Typography key={tag} tag={tag as TypographyTags} className={className}>
+      {previewInfo.map(({ className, tag, value }, index) => (
+        <Typography key={`${tag}${Date.now()}${index}}`} tag={tag as TypographyTags} className={className}>
           {value}
         </Typography>
       ))}

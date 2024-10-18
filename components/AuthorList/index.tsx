@@ -18,6 +18,7 @@ export const AuthorList = ({ limit }: AuthorListProps) => {
           <Link key={id} href={ROUTES.author.replace('[id]', id)}>
             <AuthorCard
               id={id}
+              className="[&_svg]:max-w-4 [&_svg]:max-h-4"
               avatar={avatar}
               name={name}
               roleName={role}

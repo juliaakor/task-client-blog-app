@@ -35,6 +35,7 @@ export default async function Home({ params }: HomePageProps) {
             locale={params.locale}
             buttonLinkTitle={t('buttons.readMoreButtonTitle')}
             isSubTitleSection
+            hasSubTitleName
           />
         </div>
       </div>

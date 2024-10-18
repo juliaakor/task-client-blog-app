@@ -58,16 +58,17 @@ export const PostsPreview = async () => {
         </div>
         <div className="px-8 flex flex-col items-stretch aspect-auto">
           {postsWithUser.map(({ createdAt, id, name, user }) => (
-            <PostCard
-              key={id}
-              type="small"
-              className="h-1/4"
-              title={name || ''}
-              label={t('postHeader.dateShortAndAuthor', {
-                author: user.name,
-                date: dateToString(createdAt || '', 'short', 'ru'),
-              })}
-            />
+            <Link key={id} href={ROUTES.post.replace('[id]', user.id).replace('[postId]', id)}>
+              <PostCard
+                type="small"
+                className="h-1/4"
+                title={name || ''}
+                label={t('postHeader.dateShortAndAuthor', {
+                  author: user.name,
+                  date: dateToString(createdAt || '', 'short', 'ru'),
+                })}
+              />
+            </Link>
           ))}
         </div>
       </div>

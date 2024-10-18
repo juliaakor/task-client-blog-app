@@ -2,15 +2,14 @@
 
 import { FormikHelpers } from 'formik';
 import { useTranslations } from 'next-intl';
+import { Button, ButtonType } from 'task-blog-ui-lib';
 import { z } from 'zod';
 
+import { Form } from '@components/Form';
+import { Input } from '@components/Input';
+import { Select } from '@components/Select';
+import { Textarea } from '@components/Textarea';
 import { useEmail } from '@hooks/useEmail';
-import { Button } from '@lib/components/Button';
-import { ButtonType } from '@lib/components/Button/types';
-import { Input } from '@lib/components/controls/Input';
-import { Select } from '@lib/components/controls/Select';
-import { Textarea } from '@lib/components/controls/Textarea';
-import { Form } from '@lib/components/Form';
 import { failSendToast, successSendToast } from '@lib/toasts';
 
 import { defaultContactValues, DefaultContactValues } from './types';

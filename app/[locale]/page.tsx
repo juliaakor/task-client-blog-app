@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
+import { PageContent } from 'task-blog-ui-lib';
 
-import { getPostById } from '@/lib/api/getPostById';
-import { getUserById } from '@/lib/api/getUserById';
 import { FeaturedPost } from '@components/FeaturedPost';
 import { HomePageContent } from '@components/HomePageContent';
 import { PostsPreview } from '@components/PostsPreview';
 import { ENV } from '@constants/env';
-import { PageContent } from '@lib/components/PageContent';
+import { getPostById } from '@lib/api/getPostById';
+import { getUserById } from '@lib/api/getUserById';
 
 import { HomePageProps } from './types';
 
@@ -35,6 +35,7 @@ export default async function Home({ params }: HomePageProps) {
             locale={params.locale}
             buttonLinkTitle={t('buttons.readMoreButtonTitle')}
             isSubTitleSection
+            hasSubTitleName
           />
         </div>
       </div>

@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { Button } from 'task-blog-ui-lib';
 
 import { useRouter } from '@/i18n';
 import peopleLookingAtTheSea from '@assets/images/peopleLookingAtTheSea.png';
 import { PreviewInfo } from '@components/common/PreviewInfo';
 import { ROUTES } from '@constants/navigation';
-import { Button } from '@lib/components/Button';
 
 import { ReasonsTranslation } from './types';
 

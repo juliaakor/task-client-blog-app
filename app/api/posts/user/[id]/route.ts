@@ -1,8 +1,8 @@
-import { createErrorResponse } from '@/lib/api/createErrorResponse';
-import { filterPosts } from '@/lib/api/filterPosts';
-import { getPaginationParams } from '@/lib/api/getPaginationParams';
-import { paginateData } from '@/lib/api/paginateData';
 import { NOT_FOUND_ERROR_STATUS_CODE, USERS_LIMIT_DEFAULT } from '@constants/api';
+import { createErrorResponse } from '@lib/api/createErrorResponse';
+import { filterPosts } from '@lib/api/filterPosts';
+import { getPaginationParams } from '@lib/api/getPaginationParams';
+import { paginateData } from '@lib/api/paginateData';
 import posts from '@lib/mocks/posts';
 
 interface GETUserPostsByIdApiParams {

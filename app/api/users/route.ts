@@ -1,6 +1,6 @@
-import { getPaginationParams } from '@/lib/api/getPaginationParams';
-import { paginateData } from '@/lib/api/paginateData';
 import { USERS_LIMIT_DEFAULT } from '@constants/api';
+import { getPaginationParams } from '@lib/api/getPaginationParams';
+import { paginateData } from '@lib/api/paginateData';
 import users from '@lib/mocks/users';
 
 export async function GET(request: Request) {

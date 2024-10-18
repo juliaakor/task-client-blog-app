@@ -1,4 +1,4 @@
-import { Typography } from '@/lib/components/Typography';
+import { Typography } from 'task-blog-ui-lib';
 
 import { SectionProps } from './types';
 

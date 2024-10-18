@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-import { createErrorResponse } from '@/lib/api/createErrorResponse';
+import { createErrorResponse } from '@lib/api/createErrorResponse';
 
 jest.mock('next/server', () => ({
   NextResponse: {

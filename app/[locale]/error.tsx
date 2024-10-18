@@ -2,9 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
-
-import { Button } from '@lib/components/Button';
-import { Typography } from '@lib/components/Typography';
+import { Button, Typography } from 'task-blog-ui-lib';
 
 import { ErrorProps } from './types';
 

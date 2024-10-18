@@ -1,11 +1,10 @@
 import { useTranslations } from 'next-intl';
+import { Socials, AvailableSocialsUnion } from 'task-blog-ui-lib';
 
 import { Logo } from '@components/common/Logo';
 import { Navbar } from '@components/common/Navbar';
 import LocaleSwitcher from '@components/LocaleSwitcher';
 import { SubscribtionForm } from '@components/SubscribtionForm';
-import { Socials } from '@lib/components/Socials';
-import { AvailableSocialsUnion } from '@lib/components/Socials/types';
 
 const companyLinks = {
   facebook: 'https://www.facebook.com/',
@@ -42,6 +41,7 @@ export const Footer = () => {
           className="gap-6 filter brightness-[3] saturate-50"
           isIncluded={Object.keys(companyLinks) as AvailableSocialsUnion[]}
           links={companyLinks}
+          iconStyle="max-w-4 max-h-4"
         />
       </div>
       <LocaleSwitcher />

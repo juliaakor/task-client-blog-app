@@ -2,10 +2,10 @@
 
 import { StaticImageData } from 'next/image';
 import { useTranslations } from 'next-intl';
+import { PostCard } from 'task-blog-ui-lib';
 
-import { ROUTES } from '@/constants/navigation';
 import { useRouter } from '@/i18n';
-import { PostCard } from '@lib/components/cards/PostCard';
+import { ROUTES } from '@constants/navigation';
 import { dateToString } from '@lib/format/dateToString';
 
 import { FeaturedPostProps } from './types';
@@ -35,8 +35,8 @@ export const FeaturedPost = ({
   };
 
   const subTitle = isSubTitleSection
-    ? `${t('featuredSubTitles.category')} ${categoryLabel}`
-    : t('featuredSubTitles.post');
+    ? `${t.raw('featuredSubTitles.category')} ${categoryLabel}`
+    : t.raw('featuredSubTitles.post');
 
   return (
     <div className={className}>

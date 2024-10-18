@@ -1,6 +1,6 @@
-import { createErrorResponse } from '@/lib/api/createErrorResponse';
-import { filterPosts } from '@/lib/api/filterPosts';
 import { NOT_FOUND_ERROR_STATUS_CODE } from '@constants/api';
+import { createErrorResponse } from '@lib/api/createErrorResponse';
+import { filterPosts } from '@lib/api/filterPosts';
 import posts from '@lib/mocks/posts';
 import users from '@lib/mocks/users';
 
